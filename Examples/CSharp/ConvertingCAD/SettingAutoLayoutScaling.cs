@@ -36,7 +36,6 @@ namespace CSharp.ConvertingCAD
             }
             //ExEnd:SettingAutoLayoutScaling            
             Console.WriteLine("\nAuto layout scaling setup successfully.\nFile saved at " + MyDir);
-
         }
     }
 }

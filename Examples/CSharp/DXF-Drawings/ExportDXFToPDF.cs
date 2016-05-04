@@ -33,7 +33,6 @@ namespace CSharp.DXF_Drawings
             }
             //ExEnd:ExportDXFToPDF            
             Console.WriteLine("\nThe DXF drawing exported successfully to PDF.\nFile saved at " + MyDir);
-
         }
     }
 }

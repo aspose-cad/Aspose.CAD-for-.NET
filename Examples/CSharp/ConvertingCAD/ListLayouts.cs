@@ -24,9 +24,7 @@ namespace CSharp.ConvertingCAD
                     Console.WriteLine("Layout " + layout.LayoutName);
                 }
             }
-            //ExEnd:ListLayouts            
-            
-
+            //ExEnd:ListLayouts
         }
     }
 }

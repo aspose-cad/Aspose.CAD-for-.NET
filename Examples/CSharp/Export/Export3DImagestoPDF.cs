@@ -30,7 +30,6 @@ namespace CSharp.Export
             }
             //ExEnd:Export3DImagestoPDF            
             Console.WriteLine("\n3D images exported successfully to PDF.\nFile saved at " + MyDir);
-
         }
     }
 }

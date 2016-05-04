@@ -34,7 +34,6 @@ namespace CSharp.DWG_Drawings
             }
             //ExEnd:ExportSpecificLayoutToPDF            
             Console.WriteLine("\nThe DWG file with specific layout exported successfully to PDF.\nFile saved at " + MyDir);
-
         }
     }
 }

@@ -40,7 +40,6 @@ namespace CSharp.ConvertingCAD
                 cadImage.Styles["Roman"].PrimaryFontName = "Arial";
             }
             //ExEnd:SubstitutingFontByName    
-
         }
     }
 }

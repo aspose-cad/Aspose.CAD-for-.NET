@@ -43,7 +43,6 @@ namespace CSharp.ConvertingCAD
             }
             //ExEnd:SettingBackgroundAndDrawingColors            
             Console.WriteLine("\nBackground and drawing colors setup successfully.");
-
         }
     }
 }

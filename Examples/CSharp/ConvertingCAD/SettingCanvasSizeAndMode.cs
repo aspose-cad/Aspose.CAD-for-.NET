@@ -42,7 +42,6 @@ namespace CSharp.ConvertingCAD
             }
             //ExEnd:SettingCanvasSizeAndMode            
             Console.WriteLine("\nCanvas size and mode setup successfully.");
-
         }
     }
 }

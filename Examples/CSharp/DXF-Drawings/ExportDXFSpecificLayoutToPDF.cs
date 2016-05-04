@@ -34,7 +34,6 @@ namespace CSharp.DXF_Drawings
             }
             //ExEnd:ExportDXFSpecificLayoutToPDF            
             Console.WriteLine("\nThe DXF file with specific layout exported successfully to PDF.\nFile saved at " + MyDir);
-
         }
     }
 }
