@@ -8,7 +8,7 @@ Imports VisualBasic.Export
 
 Module RunExamples
     Sub Main()
-        Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run")
+        Console.WriteLine("Open RunExamples.vb. In Main() method, Un-comment the example that you want to run")
         Console.WriteLine("=====================================================")
 
         ' Un-comment the one you want to try out
