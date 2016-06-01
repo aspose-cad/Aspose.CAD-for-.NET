@@ -3,7 +3,7 @@
 This package contains C# and VB.NET Example Projects for [Aspose.CAD for .NET](http://www.aspose.com/autocad-api-suite.aspx).
 
 <p align="center">
-  <a title="Download Examples ZIP" href="https://github.com/aspose3d/Aspose_CAD_NET/archive/master.zip">
+  <a title="Download Examples ZIP" href="https://github.com/aspose-cad/Aspose.CAD-for-.NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
