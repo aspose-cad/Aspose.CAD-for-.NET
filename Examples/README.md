@@ -1,6 +1,6 @@
 ##Aspose.CAD for .NET Examples
 
-This package contains C# and VB.NET Example Projects for [Aspose.CAD for .NET](http://www.aspose.com/autocad-api-suite.aspx).
+This repository contains C# and VB.NET Example Projects for [Aspose.CAD for .NET](http://www.aspose.com/products/cad/net).
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/aspose-cad/Aspose.CAD-for-.NET/archive/master.zip">
@@ -10,4 +10,6 @@ This package contains C# and VB.NET Example Projects for [Aspose.CAD for .NET](h
 
 ## How to Run the Examples?
 
-There are two Visual projects, one for C# and other for Visual Basic examples. You can just download the repository, browse the folder and open the file in Visual Studio. For more details, visit our [documentation website](http://www.aspose.com/docs/display/cadnet/How+to+Run+the+Examples).
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-cad/Aspose.CAD-for-.NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
+
++ [How to Run the Examples](http://www.aspose.com/docs/display/cadnet/How+to+Run+the+Examples)
