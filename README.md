@@ -1,6 +1,6 @@
 ##Aspose.CAD for .NET
 
-This package contains [Examples](https://github.com/aspose-cad/Aspose.CAD-for-.NET/tree/master/Examples) and Showcase projects for [Aspose.CAD for .NET](http://www.aspose.com/downloads/cad/net) and will help you write your own applications.
+This repository contains [Examples](https://github.com/aspose-cad/Aspose.CAD-for-.NET/tree/master/Examples), Plugins and Showcase projects for [Aspose.CAD for .NET](http://www.aspose.com/downloads/cad/net) which will help you learn and write your own applications using [Aspose.CAD for .NET](http://www.aspose.com/downloads/cad/net).
 
 
 
@@ -12,7 +12,7 @@ This package contains [Examples](https://github.com/aspose-cad/Aspose.CAD-for-.N
 
 Directory | Description
 --------- | -----------
-[Examples]( https://github.com/aspose-cad/Aspose.CAD-for-.NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to product features
+[Examples]( https://github.com/aspose-cad/Aspose.CAD-for-.NET/tree/master/Examples)  | A collection of .NET examples that help you learn the product features
 
 ## Resources
 
