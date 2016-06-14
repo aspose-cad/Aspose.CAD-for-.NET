@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
-namespace CSharp.DXF_Drawings
+namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 {
     public class ExportDXFSpecificLayoutToPDF
     {

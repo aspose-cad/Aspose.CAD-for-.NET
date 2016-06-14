@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
 using System.IO;
-namespace CSharp.ConvertingCAD
+namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 {
     public class EnableTrackingForCADRendering
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{578599AB-5FAE-4695-BE2F-B1FA25D287BC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharp</RootNamespace>
-    <AssemblyName>CSharp</AssemblyName>
+    <RootNamespace>Aspose.CAD.Examples.CSharp</RootNamespace>
+    <AssemblyName>Aspose.CAD.Examples.CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

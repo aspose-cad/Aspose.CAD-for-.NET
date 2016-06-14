@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
-namespace CSharp.ConvertingCAD
+namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 {
     public class ConvertDrawingToRasterImage
     {

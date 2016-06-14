@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
-namespace CSharp.Export
+namespace Aspose.CAD.Examples.CSharp.Export
 {
     public class Export3DImagestoPDF
     {

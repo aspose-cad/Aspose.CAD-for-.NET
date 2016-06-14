@@ -1,17 +1,17 @@
 ﻿Imports System.Collections.Generic
 Imports System.Threading.Tasks
 Imports System.IO
-Imports VisualBasic.ConvertingCAD
-Imports VisualBasic.DWG_Drawings
-Imports VisualBasic.DXF_Drawings
-Imports VisualBasic.Export
+Imports Aspose.CAD.Examples.VisualBasic.ConvertingCAD
+Imports Aspose.CAD.Examples.VisualBasic.DWG_Drawings
+Imports Aspose.CAD.Examples.VisualBasic.DXF_Drawings
+Imports Aspose.CAD.Examples.VisualBasic.Export
 
 Module RunExamples
     Sub Main()
-        Console.WriteLine("Open RunExamples.vb. In Main() method, Un-comment the example that you want to run")
+        Console.WriteLine("Open RunExamples.vb. " & vbLf & "In Main() method uncomment the example that you want to run.")
         Console.WriteLine("=====================================================")
 
-        ' Un-comment the one you want to try out
+        ' Uncomment the one you want to try out
 
         '' =====================================================
         '' =====================================================

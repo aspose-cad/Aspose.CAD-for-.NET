@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.IO;
-using CSharp.DWG_Drawings;
-using CSharp.DXF_Drawings;
-using CSharp.ConvertingCAD;
-using CSharp.Export;
+using Aspose.CAD.Examples.CSharp.DWG_Drawings;
+using Aspose.CAD.Examples.CSharp.DXF_Drawings;
+using Aspose.CAD.Examples.CSharp.ConvertingCAD;
+using Aspose.CAD.Examples.CSharp.Export;
 
-namespace CSharp
+namespace Aspose.CAD.Examples.CSharp
 {
     class RunExamples
     {
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Un-comment the one you want to try out
+            // Uncomment the one you want to try out
 
             //// =====================================================
             //// =====================================================
