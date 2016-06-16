@@ -10,7 +10,6 @@ This repository contains C# and VB.NET Example Projects for [Aspose.CAD for .NET
 
 ## How to Run the Examples?
 
-After you have downloaded the ZIP file from the Download ZIP link above, please check the following link with detailed instructions on how to run these Source Code Examples.
 
 After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-cad/Aspose.CAD-for-.NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
 
