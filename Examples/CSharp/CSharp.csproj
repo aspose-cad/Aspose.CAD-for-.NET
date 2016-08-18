@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
     <Compile Include="ConvertingCAD\ConvertLayoutsToRasterImage.cs" />
     <Compile Include="ConvertingCAD\ConvertDrawingToRasterImage.cs" />
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="ConvertingCAD\ListLayouts.cs" />
     <Compile Include="Export\CADLayoutsToPDF.cs" />
     <Compile Include="Export\Export3DImagestoPDF.cs" />
+    <Compile Include="ApplyLicense\ApplyLicenseByPath.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

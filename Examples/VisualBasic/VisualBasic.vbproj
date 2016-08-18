@@ -70,6 +70,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyLicense\ApplyLicenseByPath.vb" />
+    <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.vb" />
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.vb" />
     <Compile Include="ConvertingCAD\ConvertDrawingToRasterImage.vb" />
     <Compile Include="ConvertingCAD\ConvertLayoutsToRasterImage.vb" />
