@@ -5,6 +5,7 @@ Imports Aspose.CAD.Examples.VisualBasic.ConvertingCAD
 Imports Aspose.CAD.Examples.VisualBasic.DWG_Drawings
 Imports Aspose.CAD.Examples.VisualBasic.DXF_Drawings
 Imports Aspose.CAD.Examples.VisualBasic.Export
+Imports Aspose.CAD.Examples.VisualBasic.Exporting_DGN
 
 Module RunExamples
     Sub Main()
@@ -21,6 +22,8 @@ Module RunExamples
 
         'ExportToPDF.Run()
         'ExportSpecificLayoutToPDF.Run()
+        'GetBlockAttributeValue.Run()
+        'SearchText.Run()
 
         '' =====================================================
         '' =====================================================
@@ -58,6 +61,15 @@ Module RunExamples
         'Export3DImagestoPDF.Run()
         'CADLayoutsToPDF.Run()
 
+        '' =====================================================
+        '' =====================================================
+        '' Exporting-DGN
+        '' =====================================================
+        '' =====================================================
+
+        'ExportDGNToPdf.Run()
+        'ExportDGNToRasterImage.Run()
+
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
         Console.ReadKey()
@@ -71,6 +83,10 @@ Module RunExamples
     Public Function GetDataDir_ConvertingCAD() As [String]
         Return Path.GetFullPath(GetDataDir_Data() & Convert.ToString("ConvertingCAD/"))
     End Function
+    Public Function GetDataDir_ExportingDGN() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "Exporting-DGN/")
+    End Function
+
     Private Function GetDataDir_Data() As String
         Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent
         Dim startDirectory As String = Nothing

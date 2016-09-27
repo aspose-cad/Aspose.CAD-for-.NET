@@ -47,8 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD">
-      <HintPath>..\packages\Aspose.CAD.1.0.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=1.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.CAD.1.1.0\lib\net40\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -83,9 +84,13 @@
     <Compile Include="ConvertingCAD\SubstitutingFonts.vb" />
     <Compile Include="DWG-Drawings\ExportSpecificLayoutToPDF.vb" />
     <Compile Include="DWG-Drawings\ExportToPDF.vb" />
+    <Compile Include="DWG-Drawings\GetBlockAttributeValue.vb" />
+    <Compile Include="DWG-Drawings\SearchText.vb" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.vb" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayoutToPDF.vb" />
     <Compile Include="DXF-Drawings\ExportDXFToPDF.vb" />
+    <Compile Include="Exporting-DGN\ExportDGNToPdf.vb" />
+    <Compile Include="Exporting-DGN\ExportDGNToRasterImage.vb" />
     <Compile Include="Export\CADLayoutsToPDF.vb" />
     <Compile Include="Export\Export3DImagestoPDF.vb" />
     <Compile Include="RunExamples.vb" />

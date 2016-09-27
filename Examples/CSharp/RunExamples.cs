@@ -6,6 +6,7 @@ using Aspose.CAD.Examples.CSharp.DWG_Drawings;
 using Aspose.CAD.Examples.CSharp.DXF_Drawings;
 using Aspose.CAD.Examples.CSharp.ConvertingCAD;
 using Aspose.CAD.Examples.CSharp.Export;
+using Aspose.CAD.Examples.CSharp.Exporting_DGN;
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -24,8 +25,10 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
             
-            ExportToPDF.Run();
+            //ExportToPDF.Run();
             //ExportSpecificLayoutToPDF.Run();
+            //GetBlockAttributeValue.Run();
+            SearchText.Run();
 
             //// =====================================================
             //// =====================================================
@@ -62,11 +65,24 @@ namespace Aspose.CAD.Examples.CSharp
 
             //Export3DImagestoPDF.Run();
             //CADLayoutsToPDF.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Exporting-DGN
+            //// =====================================================
+            //// =====================================================
+
+            //ExportDGNToPdf.Run();
+            //ExportDGNToRasterImage.Run();
             
             
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
+        }
+        public static String GetDataDir_ExportingDGN()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Exporting-DGN/");
         }
         public static String GetDataDir_DWGDrawings()
         {
