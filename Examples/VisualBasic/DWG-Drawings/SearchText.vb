@@ -27,7 +27,7 @@ Namespace DWG_Drawings
                 Dim layoutNames As String() = New String(layouts.Count - 1) {}
                 Dim i As Integer = 0
                 For Each layout As Aspose.CAD.FileFormats.Cad.CadObjects.CadLayout In layouts.Values
-                    layoutNames(System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)) = layout.LayoutName
+                    layoutNames(i) = layout.LayoutName
                     System.Console.WriteLine("Layout " + layout.LayoutName + " is found")
 
                     ' Find block, applicable for DWG only
@@ -51,7 +51,7 @@ Namespace DWG_Drawings
                 rasterizationOptions.CenterDrawing = True
 
                 ' Please, note: if cadBlockEntity collection mentioned above (for dwg) for selected layout or entitiesOnLayouts collection by layout's BlockTableRecordHandle (for dxf) is empty - export result file will be empty and you should draw Model layout instead
-                rasterizationOptions.Layouts = New Object() {"Layout1"}
+                rasterizationOptions.Layouts = New String() {"Layout1"}
 
                 Dim pdfOptions As New Aspose.CAD.ImageOptions.PdfOptions()
 

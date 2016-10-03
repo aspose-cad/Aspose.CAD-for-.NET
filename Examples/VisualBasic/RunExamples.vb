@@ -23,7 +23,7 @@ Module RunExamples
         'ExportToPDF.Run()
         'ExportSpecificLayoutToPDF.Run()
         'GetBlockAttributeValue.Run()
-        'SearchText.Run()
+        SearchText.Run()
 
         '' =====================================================
         '' =====================================================
