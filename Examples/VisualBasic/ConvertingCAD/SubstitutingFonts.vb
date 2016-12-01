@@ -12,9 +12,9 @@ Namespace ConvertingCAD
             Dim sourceFilePath As String = MyDir & Convert.ToString("conic_pyramid.dxf")
             ' Load a CAD drawing  in an instance of CadImage
             Using cadImage As Aspose.CAD.FileFormats.Cad.CadImage = DirectCast(Aspose.CAD.Image.Load(sourceFilePath), Aspose.CAD.FileFormats.Cad.CadImage)
-                'Iterate over the items of CadStyleDictionary
+                ' Iterate over the items of CadStyleDictionary
                 For Each style In cadImage.Styles.ValuesTyped
-                    'Set the font name
+                    ' Set the font name
                     style.PrimaryFontName = "Arial"
                 Next style
             End Using

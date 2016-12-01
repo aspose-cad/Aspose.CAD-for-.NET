@@ -118,7 +118,7 @@ namespace Aspose.CAD.Examples.CSharp
         {
             string extension = Path.GetExtension(inputFilePath);
             string filename = Path.GetFileNameWithoutExtension(inputFilePath);
-            return filename + "_out_" + extension;
+            return filename + "_out" + extension;
         }
     }
 }

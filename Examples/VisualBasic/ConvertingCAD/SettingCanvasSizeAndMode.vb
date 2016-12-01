@@ -24,7 +24,7 @@ Namespace ConvertingCAD
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
                 ' Export CAD to PDF
-                image.Save(MyDir & Convert.ToString("result_out_.pdf"), pdfOptions)
+                image.Save(MyDir & Convert.ToString("result_out.pdf"), pdfOptions)
 
                 ' Create an instance of TiffOptions
                 Dim tiffOptions As New Aspose.CAD.ImageOptions.TiffOptions(Aspose.CAD.FileFormats.Tiff.Enums.TiffExpectedFormat.[Default])
@@ -33,7 +33,7 @@ Namespace ConvertingCAD
                 tiffOptions.VectorRasterizationOptions = rasterizationOptions
 
                 ' Export CAD to TIFF
-                image.Save(MyDir & Convert.ToString("result_out_.tiff"), tiffOptions)
+                image.Save(MyDir & Convert.ToString("result_out.tiff"), tiffOptions)
             End Using
             ' ExEnd:SettingCanvasSizeAndMode            
             Console.WriteLine(vbLf & "Canvas size and mode setup successfully.")

@@ -37,7 +37,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 PdfOptions pdfOptions = new PdfOptions();
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "CADLayoutsToPDF_out_.pdf";
+                MyDir = MyDir + "CADLayoutsToPDF_out.pdf";
 
                 // Set Graphics options
                 rasterizationOptions.GraphicsOptions.SmoothingMode = SmoothingMode.HighQuality;

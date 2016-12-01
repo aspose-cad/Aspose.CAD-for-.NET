@@ -27,7 +27,7 @@ Namespace ConvertingCAD
                 ' Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("conic_pyramid_layoutstorasterimage_out_.tiff")
+                MyDir = MyDir & Convert.ToString("conic_pyramid_layoutstorasterimage_out.tiff")
 
                 ' Save resultant image
                 image.Save(MyDir, options)

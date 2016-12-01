@@ -33,7 +33,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
                     // Call the save method of the CadImage class object.
-                    cadImage.Save(MyDir + "ExportDGNToPdf_out_.pdf", pdfOptions);
+                    cadImage.Save(MyDir + "ExportDGNToPdf_out.pdf", pdfOptions);
                 }
                 //ExEnd:ExportDGNToPdf            
                 Console.WriteLine("\nThe DGN file exported successfully to PDF.\nFile saved at " + MyDir);

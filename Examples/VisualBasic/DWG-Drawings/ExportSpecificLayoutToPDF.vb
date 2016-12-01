@@ -23,7 +23,7 @@ Namespace DWG_Drawings
                 ' Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("ExportSpecificLayoutToPDF_out_.pdf")
+                MyDir = MyDir & Convert.ToString("ExportSpecificLayoutToPDF_out.pdf")
                 ' Export the DWG to PDF
                 image.Save(MyDir, pdfOptions)
             End Using

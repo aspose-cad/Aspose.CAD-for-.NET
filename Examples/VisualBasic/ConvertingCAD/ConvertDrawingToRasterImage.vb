@@ -19,10 +19,10 @@ Namespace ConvertingCAD
 
                 ' Create an instance of PngOptions for the resultant image
                 Dim options As ImageOptionsBase = New Aspose.CAD.ImageOptions.PngOptions()
-                'Set rasterization options
+                ' Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("conic_pyramid_raster_image_out_.png")
+                MyDir = MyDir & Convert.ToString("conic_pyramid_raster_image_out.png")
                 ' Save resultant image
                 image.Save(MyDir, options)
             End Using

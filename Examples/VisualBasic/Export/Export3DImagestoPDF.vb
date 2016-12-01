@@ -20,7 +20,7 @@ Namespace Export
                 rasterizationOptions.Layouts = New String() {"Model"}
                 Dim pdfOptions As New PdfOptions()
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
-                MyDir = MyDir & Convert.ToString("Export3DImagestoPDF_out_.pdf")
+                MyDir = MyDir & Convert.ToString("Export3DImagestoPDF_out.pdf")
                 cadImage.Save(MyDir, pdfOptions)
             End Using
             ' ExEnd:Export3DImagestoPDF            

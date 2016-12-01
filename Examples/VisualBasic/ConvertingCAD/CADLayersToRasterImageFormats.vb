@@ -23,13 +23,13 @@ Namespace ConvertingCAD
 
                 ' Add the layer name to the CadRasterizationOptions's layer list
                 rasterizationOptions.Layers.Add("0")
-                'Most of the CAD drawings have a layer by name 0, you may specify any name
+                ' Most of the CAD drawings have a layer by name 0, you may specify any name
                 ' Create an instance of JpegOptions (or any ImageOptions for raster formats)
                 Dim options = New Aspose.CAD.ImageOptions.JpegOptions()
                 ' Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                 options.VectorRasterizationOptions = rasterizationOptions
                 ' Export each layer to Jpeg format
-                MyDir = MyDir & Convert.ToString("CADLayersToRasterImageFormats_out_.jpg")
+                MyDir = MyDir & Convert.ToString("CADLayersToRasterImageFormats_out.jpg")
                 image.Save(MyDir, options)
             End Using
             ' ExEnd:CADLayersToRasterImageFormats            
@@ -65,7 +65,7 @@ Namespace ConvertingCAD
                     ' Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                     options.VectorRasterizationOptions = rasterizationOptions
                     ' Export each layer to Jpeg format
-                    image.Save(layer.Name + "_out_.jpg", options)
+                    image.Save(layer.Name + "_out.jpg", options)
                 Next
             End Using
             ' ExEnd:ConvertAllLayersToRasterImageFormats

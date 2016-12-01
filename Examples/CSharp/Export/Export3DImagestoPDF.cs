@@ -25,7 +25,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 rasterizationOptions.Layouts = new string[] { "Model" };
                 PdfOptions pdfOptions = new PdfOptions();
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
-                MyDir = MyDir + "Export3DImagestoPDF_out_.pdf";
+                MyDir = MyDir + "Export3DImagestoPDF_out.pdf";
                 cadImage.Save(MyDir, pdfOptions);
             }
             //ExEnd:Export3DImagestoPDF            

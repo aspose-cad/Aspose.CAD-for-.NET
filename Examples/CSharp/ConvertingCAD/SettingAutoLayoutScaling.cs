@@ -30,7 +30,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "result_out_.pdf";
+                MyDir = MyDir + "result_out.pdf";
                 // Export the CAD to PDF
                 image.Save(MyDir, pdfOptions);
             }

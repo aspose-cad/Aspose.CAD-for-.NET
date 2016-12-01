@@ -103,6 +103,6 @@ Module RunExamples
     Public Function GetOutputFilePath(inputFilePath As [String]) As String
         Dim extension As String = Path.GetExtension(inputFilePath)
         Dim filename As String = Path.GetFileNameWithoutExtension(inputFilePath)
-        Return Convert.ToString(filename & Convert.ToString("_out_")) & extension
+        Return Convert.ToString(filename & Convert.ToString("_out")) & extension
     End Function
 End Module

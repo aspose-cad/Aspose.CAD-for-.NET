@@ -27,7 +27,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                 // Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "conic_pyramid_out_.pdf";
+                MyDir = MyDir + "conic_pyramid_out.pdf";
                 // Export the DXF to PDF
                 image.Save(MyDir, pdfOptions);                
             }

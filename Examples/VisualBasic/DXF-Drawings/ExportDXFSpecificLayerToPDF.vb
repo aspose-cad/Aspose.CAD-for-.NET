@@ -23,7 +23,7 @@ Namespace DXF_Drawings
                 ' Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("conic_pyramid_layer_out_.pdf")
+                MyDir = MyDir & Convert.ToString("conic_pyramid_layer_out.pdf")
                 ' Export the DXF to PDF
                 image.Save(MyDir, pdfOptions)
             End Using

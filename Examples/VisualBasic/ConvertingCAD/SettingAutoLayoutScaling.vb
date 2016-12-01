@@ -25,7 +25,7 @@ Namespace ConvertingCAD
                 ' Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("result_out_.pdf")
+                MyDir = MyDir & Convert.ToString("result_out.pdf")
                 ' Export the CAD to PDF
                 image.Save(MyDir, pdfOptions)
             End Using

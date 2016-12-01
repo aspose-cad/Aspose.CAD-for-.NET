@@ -27,7 +27,7 @@ Namespace Exporting_DGN
                     pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
                     ' Call the save method of the CadImage class object.
-                    cadImage.Save(MyDir & Convert.ToString("ExportDGNToPdf_out_.pdf"), pdfOptions)
+                    cadImage.Save(MyDir & Convert.ToString("ExportDGNToPdf_out.pdf"), pdfOptions)
                 End Using
                 'ExEnd:ExportDGNToPdf            
                 Console.WriteLine(Convert.ToString(vbLf & "The DGN file exported successfully to PDF." & vbLf & "File saved at ") & MyDir)

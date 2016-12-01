@@ -56,7 +56,7 @@ Namespace DWG_Drawings
                 Dim pdfOptions As New Aspose.CAD.ImageOptions.PdfOptions()
 
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
-                cadImage.Save(MyDir & Convert.ToString("SearchText_out_.pdf"), pdfOptions)
+                cadImage.Save(MyDir & Convert.ToString("SearchText_out.pdf"), pdfOptions)
             End Using
             'ExEnd:SearchText  
         End Sub

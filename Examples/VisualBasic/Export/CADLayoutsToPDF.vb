@@ -32,7 +32,7 @@ Namespace Export
                 Dim pdfOptions As New PdfOptions()
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions
 
-                MyDir = MyDir & Convert.ToString("CADLayoutsToPDF_out_.pdf")
+                MyDir = MyDir & Convert.ToString("CADLayoutsToPDF_out.pdf")
 
                 ' Set Graphics options
                 rasterizationOptions.GraphicsOptions.SmoothingMode = SmoothingMode.HighQuality

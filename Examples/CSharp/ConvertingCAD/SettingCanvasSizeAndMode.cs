@@ -29,7 +29,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
                 // Export CAD to PDF
-                image.Save(MyDir + "result_out_.pdf", pdfOptions);
+                image.Save(MyDir + "result_out.pdf", pdfOptions);
 
                 // Create an instance of TiffOptions
                 Aspose.CAD.ImageOptions.TiffOptions tiffOptions = new Aspose.CAD.ImageOptions.TiffOptions(Aspose.CAD.FileFormats.Tiff.Enums.TiffExpectedFormat.Default);
@@ -38,7 +38,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 tiffOptions.VectorRasterizationOptions = rasterizationOptions;
 
                 // Export CAD to TIFF
-                image.Save(MyDir + "result_out_.tiff", tiffOptions);
+                image.Save(MyDir + "result_out.tiff", tiffOptions);
             }
             //ExEnd:SettingCanvasSizeAndMode            
             Console.WriteLine("\nCanvas size and mode setup successfully.");

@@ -28,7 +28,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 // Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "ExportSpecificLayoutToPDF_out_.pdf";
+                MyDir = MyDir + "ExportSpecificLayoutToPDF_out.pdf";
                 // Export the DWG to PDF
                 image.Save(MyDir, pdfOptions);                
             }

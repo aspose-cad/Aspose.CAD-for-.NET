@@ -65,7 +65,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 Aspose.CAD.ImageOptions.PdfOptions pdfOptions = new Aspose.CAD.ImageOptions.PdfOptions();
 
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
-                cadImage.Save(MyDir + "SearchText_out_.pdf", pdfOptions);
+                cadImage.Save(MyDir + "SearchText_out.pdf", pdfOptions);
             }
             //ExEnd:SearchText  
         }

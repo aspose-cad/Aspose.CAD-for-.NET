@@ -32,7 +32,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "conic_pyramid_layoutstorasterimage_out_.tiff";
+                MyDir = MyDir + "conic_pyramid_layoutstorasterimage_out.tiff";
 
                 // Save resultant image
                 image.Save(MyDir, options);                

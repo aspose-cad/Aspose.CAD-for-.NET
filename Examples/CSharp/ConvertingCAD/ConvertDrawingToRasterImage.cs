@@ -24,10 +24,10 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 
                 // Create an instance of PngOptions for the resultant image
                 ImageOptionsBase options = new Aspose.CAD.ImageOptions.PngOptions();
-                //Set rasterization options
+                // Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions;
 
-                MyDir = MyDir + "conic_pyramid_raster_image_out_.png";
+                MyDir = MyDir + "conic_pyramid_raster_image_out.png";
                 // Save resultant image
                 image.Save(MyDir, options);                
             }
