@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
+    <Compile Include="ApplyLicense\MeteredLicensing.cs" />
     <Compile Include="ConvertingCAD\ConvertLayoutsToRasterImage.cs" />
     <Compile Include="ConvertingCAD\ConvertDrawingToRasterImage.cs" />
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="ConvertingCAD\SettingAutoLayoutScaling.cs" />
     <Compile Include="ConvertingCAD\SettingBackgroundAndDrawingColors.cs" />
     <Compile Include="ConvertingCAD\SettingCanvasSizeAndMode.cs" />
+    <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
     <Compile Include="DWG-Drawings\SearchText.cs" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="DWG-Drawings\ExportSpecificLayoutToPDF.cs" />
     <Compile Include="DWG-Drawings\ExportToPDF.cs" />
     <Compile Include="ConvertingCAD\ListLayouts.cs" />
+    <Compile Include="Exporting-DGN\ExportDGNAsPartofDWG.cs" />
     <Compile Include="Exporting-DGN\ExportDGNToRasterImage.cs" />
     <Compile Include="Exporting-DGN\ExportDGNToPdf.cs" />
     <Compile Include="Export\CADLayoutsToPDF.cs" />

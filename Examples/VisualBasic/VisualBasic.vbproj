@@ -82,6 +82,7 @@
     <Compile Include="ConvertingCAD\SettingBackgroundAndDrawingColors.vb" />
     <Compile Include="ConvertingCAD\SettingCanvasSizeAndMode.vb" />
     <Compile Include="ConvertingCAD\SubstitutingFonts.vb" />
+    <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.vb" />
     <Compile Include="DWG-Drawings\ExportSpecificLayoutToPDF.vb" />
     <Compile Include="DWG-Drawings\ExportToPDF.vb" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.vb" />
@@ -89,6 +90,7 @@
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.vb" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayoutToPDF.vb" />
     <Compile Include="DXF-Drawings\ExportDXFToPDF.vb" />
+    <Compile Include="Exporting-DGN\ExportDGNAsPartofDWG.vb" />
     <Compile Include="Exporting-DGN\ExportDGNToPdf.vb" />
     <Compile Include="Exporting-DGN\ExportDGNToRasterImage.vb" />
     <Compile Include="Export\CADLayoutsToPDF.vb" />
