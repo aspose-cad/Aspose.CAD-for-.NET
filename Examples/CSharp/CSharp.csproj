@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
     <Compile Include="ApplyLicense\MeteredLicensing.cs" />
+    <Compile Include="ConvertingCAD\AdjustingCADDrawingSize.cs" />
     <Compile Include="ConvertingCAD\ConvertLayoutsToRasterImage.cs" />
     <Compile Include="ConvertingCAD\ConvertDrawingToRasterImage.cs" />
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.cs" />
