@@ -22,4 +22,4 @@ Directory | Description
 + **Download:** [Download Aspose.CAD for .NET](http://www.aspose.com/downloads/cad/net)
 + **Documentation:** [Aspose.CAD for .NET Documentation](https://docs.aspose.com/display/cadnet/Home)
 + **Forum:** [Aspose.CAD for .NET Forum](http://www.aspose.com/community/forums/aspose.cad-product-family/540/showforum.aspx)
-+ **Blog:** [Aspose.CAD for .NET Blog](https://docs.aspose.com/display/slidescloud/Home)
++ **Blog:** [Aspose.CAD for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.cad-product-family/)
