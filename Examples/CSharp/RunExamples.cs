@@ -28,7 +28,8 @@ namespace Aspose.CAD.Examples.CSharp
             //ExportToPDF.Run();
             //ExportSpecificLayoutToPDF.Run();
             //GetBlockAttributeValue.Run();
-            SearchText.Run();
+            //SearchText.Run();
+            //SupportMLeaderEntityForDWGFormat.Run();
 
             //// =====================================================
             //// =====================================================
@@ -65,7 +66,8 @@ namespace Aspose.CAD.Examples.CSharp
 
             //Export3DImagestoPDF.Run();
             //CADLayoutsToPDF.Run();
-
+            //ExportToBMP.Run();
+            //ExportDWFToPDF.Run();
             //// =====================================================
             //// =====================================================
             //// Exporting-DGN
