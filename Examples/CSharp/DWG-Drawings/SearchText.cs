@@ -8,9 +8,10 @@ using Aspose.CAD;
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {    public class SearchText
     {
+        //ExStart:SearchText
         public static void Run()
         {
-            //ExStart:SearchText
+            
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
             string sourceFilePath = MyDir + "sample.dwg";
@@ -21,11 +22,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadBaseEntity entity in cadImage.Entities)
                 {
                     // Please, note: we iterate through CadText entities here, but some other entities may contain text also, e.g. CadMText and others
-                    if (entity.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadText))
-                    {
-                        Aspose.CAD.FileFormats.Cad.CadObjects.CadText text = (Aspose.CAD.FileFormats.Cad.CadObjects.CadText)entity;
-                        System.Console.WriteLine(text.DefaultValue);
-                    }
+                    IterateCADNodes(entity);
                 }
 
                 // Search for text on specific layout get all layout names and link each layout with corresponding block with entities
@@ -67,7 +64,67 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
                 cadImage.Save(MyDir + "SearchText_out.pdf", pdfOptions);
             }
-            //ExEnd:SearchText  
+            
         }
+
+        public static void IterateCADNodes(CadBaseEntity obj)
+        {
+            if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadText))
+            {
+                Aspose.CAD.FileFormats.Cad.CadObjects.CadText childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadText)obj;
+
+                if (childObj.ChildObjects.Count != 0)
+                {
+                    foreach (var tempobj in childObj.ChildObjects)
+                    {
+                        IterateCADNodes(tempobj);
+                    }
+                }
+                else
+                {
+                    System.Console.WriteLine(childObj.DefaultValue);
+                }
+            }
+            else if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadMText))
+            {
+                Aspose.CAD.FileFormats.Cad.CadObjects.CadMText childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadMText)obj;
+
+                if (childObj.ChildObjects.Count != 0)
+                {
+                    foreach (var tempobj in childObj.ChildObjects)
+                    {
+                        IterateCADNodes(tempobj);
+                    }
+                }
+                else
+                {
+                    System.Console.WriteLine(childObj.Text);
+                }
+            }
+            else if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject))
+            {
+                Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject)obj;
+                if (childObj.ChildObjects.Count != 0)
+                {
+                    foreach (var tempobj in childObj.ChildObjects)
+                    {
+                        IterateCADNodes(tempobj);
+                    }
+                }
+                else
+                {
+                    if (childObj.TypeName == CadEntityTypeName.ATTDEF)
+                    {
+                        Console.WriteLine(((CadAttDef)((CadBaseEntity)childObj)).DefaultString);
+                    }
+                    else if (childObj.TypeName == CadEntityTypeName.ATTRIB)
+                    {
+                        Console.WriteLine(((CadAttrib)((CadBaseEntity)childObj)).DefaultText);
+                    }
+                }
+
+            }
+        }
+        //ExEnd:SearchText  
     }
 }
