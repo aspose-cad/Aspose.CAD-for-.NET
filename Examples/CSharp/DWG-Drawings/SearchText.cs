@@ -67,64 +67,68 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             
         }
 
-        public static void IterateCADNodes(CadBaseEntity obj)
-        {
-            if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadText))
-            {
-                Aspose.CAD.FileFormats.Cad.CadObjects.CadText childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadText)obj;
+      
+     public static void SearchTextInDWGAutoCADFile() 
+       { 
+           // Load an existing DWG file as CadImage. 
+           CadImage cadImage = (CadImage) Image.Load("C:\\dwg\\sample_file3.dwg"); 
+          
+           // Search for text in the entities section 
+           foreach (var entity in cadImage.Entities) { 
+               IterateCADNodes(entity); 
+           } 
 
-                if (childObj.ChildObjects.Count != 0)
-                {
-                    foreach (var tempobj in childObj.ChildObjects)
-                    {
-                        IterateCADNodes(tempobj);
-                    }
-                }
-                else
-                {
-                    System.Console.WriteLine(childObj.DefaultValue);
-                }
-            }
-            else if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadMText))
-            {
-                Aspose.CAD.FileFormats.Cad.CadObjects.CadMText childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadMText)obj;
+           // Search for text in the block section 
+           foreach (CadBlockEntity blockEntity in cadImage.BlockEntities.Values) { 
+               foreach (var entity in blockEntity.Entities) { 
+                   IterateCADNodes(entity); 
+               } 
+           } 
+       } 
 
-                if (childObj.ChildObjects.Count != 0)
-                {
-                    foreach (var tempobj in childObj.ChildObjects)
-                    {
-                        IterateCADNodes(tempobj);
-                    }
-                }
-                else
-                {
-                    System.Console.WriteLine(childObj.Text);
-                }
-            }
-            else if (obj.GetType() == typeof(Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject))
-            {
-                Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject childObj = (Aspose.CAD.FileFormats.Cad.CadObjects.CadInsertObject)obj;
-                if (childObj.ChildObjects.Count != 0)
-                {
-                    foreach (var tempobj in childObj.ChildObjects)
-                    {
-                        IterateCADNodes(tempobj);
-                    }
-                }
-                else
-                {
-                    if (childObj.TypeName == CadEntityTypeName.ATTDEF)
-                    {
-                        Console.WriteLine(((CadAttDef)((CadBaseEntity)childObj)).DefaultString);
-                    }
-                    else if (childObj.TypeName == CadEntityTypeName.ATTRIB)
-                    {
-                        Console.WriteLine(((CadAttrib)((CadBaseEntity)childObj)).DefaultText);
-                    }
-                }
 
-            }
-        }
+
+       private static void IterateCADNodes(CadBaseEntity obj) 
+       { 
+           switch (obj.TypeName) { 
+               case CadEntityTypeName.TEXT: 
+                   CadText childObjectText = (CadText) obj; 
+
+                   Console.WriteLine(childObjectText.DefaultValue); 
+
+                   break; 
+
+               case CadEntityTypeName.MTEXT: 
+                   CadMText childObjectMText = (CadMText) obj; 
+
+                   Console.WriteLine(childObjectMText.Text); 
+
+                   break; 
+
+               case CadEntityTypeName.INSERT: 
+                   CadInsertObject childInsertObject = (CadInsertObject) obj; 
+
+                   foreach (var tempobj in childInsertObject.ChildObjects) { 
+                       IterateCADNodes(tempobj); 
+                   } 
+                   break; 
+
+               case CadEntityTypeName.ATTDEF: 
+                   CadAttDef attDef = (CadAttDef) obj; 
+
+                   Console.WriteLine(attDef.DefaultString); 
+                   break; 
+
+               case CadEntityTypeName.ATTRIB: 
+                   CadAttrib attAttrib = (CadAttrib) obj; 
+
+                   Console.WriteLine(attAttrib.DefaultText); 
+                   break; 
+           } 
+     
+       
+       }
+     }
         //ExEnd:SearchText  
     }
-}
+
