@@ -9,8 +9,9 @@ namespace Aspose.CAD.Examples.CSharp.STL_Drawings
 {
     class ExportingSTLtoPNG
     {
-        public static void ExportToPNG()
+        public static void ExportToPNG() 
         {
+           // ExStart: ExportingSTLtoPNG
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             string sourceFilePath = MyDir + "galeon.stl";
 
@@ -28,5 +29,6 @@ namespace Aspose.CAD.Examples.CSharp.STL_Drawings
                 cadImage.Save(outPath, pngOptions);
             }
         }
+              //ExEnd:ExportingSTLtoPNG
     }
 }
