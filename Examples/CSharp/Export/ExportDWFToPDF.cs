@@ -7,6 +7,7 @@ using Aspose.CAD;
 using Aspose.CAD.ImageOptions;
 namespace Aspose.CAD.Examples.CSharp.Export
 {
+    public class ExportDWFToPDF
     {
         public static void Run()
         {
