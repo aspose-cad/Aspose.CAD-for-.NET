@@ -14,7 +14,6 @@ namespace Aspose.CAD.Examples.CSharp.IFC_Drawings
             //Setfile name path as other examples
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             string sourceFilePath = MyDir + "example.ifc";
-
             using (IfcImage cadImage = (IfcImage)Image.Load(sourceFilePath))
             {
                 IfcRasterizationOptions rasterizationOptions = new IfcRasterizationOptions();
