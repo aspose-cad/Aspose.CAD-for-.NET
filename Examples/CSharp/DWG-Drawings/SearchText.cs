@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.FileFormats.Cad;
 
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {    public class SearchText
