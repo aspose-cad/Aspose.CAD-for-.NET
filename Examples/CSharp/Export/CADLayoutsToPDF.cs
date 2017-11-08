@@ -27,7 +27,8 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 // Set the Entities type property to Entities3D.
                 rasterizationOptions.TypeOfEntities = TypeOfEntities.Entities3D;
 
-                rasterizationOptions.ScaleMethod = ScaleType.GrowToFit;
+                rasterizationOptions.AutomaticLayoutsScaling = true;
+                rasterizationOptions.NoScaling = false;
                 rasterizationOptions.ContentAsBitmap = true;
 
                 // Set Layouts

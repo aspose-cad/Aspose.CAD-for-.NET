@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad.CadTables;
+
 namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 {
     public class SubstitutingFonts
@@ -18,7 +20,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
             using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
             {
                 // Iterate over the items of CadStyleDictionary
-                foreach (var style in cadImage.Styles.ValuesTyped)
+                foreach (CadStyleTableObject style in cadImage.Styles)
                 {
                     // Set the font name
                     style.PrimaryFontName = "Arial";
@@ -36,8 +38,15 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
             // Load a CAD drawing in an instance of CadImage
             using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
             {
-                // Specify the font for one particular style
-                cadImage.Styles["Roman"].PrimaryFontName = "Arial";
+                // Iterate over the items of CadStyleDictionary
+                foreach (CadStyleTableObject style in cadImage.Styles)
+                {
+                    if (style.StyleName == "Roman")
+                    {
+                        // Specify the font for one particular style
+                        style.PrimaryFontName = "Arial";
+                    }
+                }
             }
             //ExEnd:SubstitutingFontByName    
         }

@@ -20,7 +20,8 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                 rasterizationOptions.PageWidth = 1600;
                 rasterizationOptions.PageHeight = 1600;
-                rasterizationOptions.ScaleMethod = Aspose.CAD.FileFormats.Cad.ScaleType.GrowToFit;
+                rasterizationOptions.AutomaticLayoutsScaling = true;
+                rasterizationOptions.NoScaling = false;
 
                 // Create an instance of PdfOptions
                 Aspose.CAD.ImageOptions.PdfOptions pdfOptions = new Aspose.CAD.ImageOptions.PdfOptions();

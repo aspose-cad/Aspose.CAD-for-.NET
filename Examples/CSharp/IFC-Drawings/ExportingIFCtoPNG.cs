@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Aspose.CAD.FileFormats.Ifc;
 
 namespace Aspose.CAD.Examples.CSharp.IFC_Drawings
 {

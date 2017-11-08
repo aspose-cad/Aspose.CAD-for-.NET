@@ -47,7 +47,8 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                         PageHeight = 1600,
                         CenterDrawing = true,
                         Layouts = new string[] { "Model" },
-                        ScaleMethod = Aspose.CAD.FileFormats.Cad.ScaleType.None,
+                        AutomaticLayoutsScaling = false,
+                        NoScaling = true,
                         BackgroundColor = Color.Black,
                         DrawType = Aspose.CAD.FileFormats.Cad.CadDrawTypeMode.UseObjectColor
                     };

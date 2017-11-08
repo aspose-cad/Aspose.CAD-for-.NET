@@ -25,8 +25,8 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     rasterizationOptions.PageWidth = 600;
                     rasterizationOptions.PageHeight = 300;
                     rasterizationOptions.CenterDrawing = true;
-                    rasterizationOptions.ScaleMethod = Aspose.CAD.FileFormats.Cad.ScaleType.None;
-                    rasterizationOptions.AutomaticLayoutsScaling = true;
+                    rasterizationOptions.NoScaling = true;
+                    rasterizationOptions.AutomaticLayoutsScaling = false;
 
                     // Create an object of JpegOptions class as we are converting the DGN to jpeg and assign DgnRasterizationOptions object to it.
                     Aspose.CAD.ImageOptionsBase options = new Aspose.CAD.ImageOptions.JpegOptions();

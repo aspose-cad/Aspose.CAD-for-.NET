@@ -58,22 +58,22 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.CenterDrawing = true;
 
                 // Get the layers in an instance of CadLayersDictionary
-                var layers = image.Layers;
+                var layersList = image.Layers;
                 // Iterate over the layers
-                foreach (var layer in layers.ValuesTyped)
+                foreach (var layerName in layersList.GetLayersNames())
                 {
                     // Display layer name for tracking
-                    Console.WriteLine("Start with " + layer.Name);
+                    Console.WriteLine("Start with " + layerName);
 
                     // Add the layer name to the CadRasterizationOptions's layer list
-                    rasterizationOptions.Layers.Add(layer.Name);
+                    rasterizationOptions.Layers.Add(layerName);
 
                     // Create an instance of JpegOptions (or any ImageOptions for raster formats)
                     var options = new Aspose.CAD.ImageOptions.JpegOptions();
                     // Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                     options.VectorRasterizationOptions = rasterizationOptions;
                     // Export each layer to Jpeg format
-                    image.Save(layer.Name + "_out.jpg", options);
+                    image.Save(layerName + "_out.jpg", options);
                 }
             }
             //ExEnd:ConvertAllLayersToRasterImageFormats
