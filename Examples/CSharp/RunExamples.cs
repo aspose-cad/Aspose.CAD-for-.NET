@@ -25,7 +25,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
             
-           ExportToPDF.Run();
+           //ExportToPDF.Run();
            // ExportSpecificLayoutToPDF.Run();
             //GetBlockAttributeValue.Run();
             //SearchText.Run();
@@ -74,7 +74,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //ExportDGNToPdf.Run();
+            ExportDGNToPdf.Run();
             //ExportDGNToRasterImage.Run();
             
 
