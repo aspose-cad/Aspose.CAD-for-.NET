@@ -18,7 +18,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 string MyDir = RunExamples.GetDataDir_ExportingDGN();
                 string sourceFilePath = MyDir + "Nikon_D90_Camera.dgn";
                 // Load an existing DGN file as CadImage.
-                using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
+                using (Aspose.CAD.FileFormats.Dgn.DgnImage cadImage = (Aspose.CAD.FileFormats.Dgn.DgnImage)Aspose.CAD.Image.Load(sourceFilePath))
                 {
                     // Create an object of CadRasterizationOptions class and define/set different properties
                     Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
