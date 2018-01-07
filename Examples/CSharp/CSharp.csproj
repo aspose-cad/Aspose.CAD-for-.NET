@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD, Version=17.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.CAD.17.9.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=17.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>E:\ACAD\Aspose.CAD.NET.Examples\Examples\packages\Aspose.CAD.17.12.0\lib\net40\Aspose.CAD.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -48,15 +48,18 @@
   <ItemGroup>
     <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
     <Compile Include="ApplyLicense\MeteredLicensing.cs" />
+    <Compile Include="CommonHelper.cs" />
     <Compile Include="ConvertingCAD\AdjustingCADDrawingSize.cs" />
     <Compile Include="ConvertingCAD\ConvertLayoutsToRasterImage.cs" />
     <Compile Include="ConvertingCAD\ConvertDrawingToRasterImage.cs" />
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.cs" />
     <Compile Include="ConvertingCAD\EnableTrackingForCADRendering.cs" />
+    <Compile Include="ConvertingCAD\GetSizeOfCADLayout.cs" />
     <Compile Include="ConvertingCAD\SubstitutingFonts.cs" />
     <Compile Include="ConvertingCAD\SettingAutoLayoutScaling.cs" />
     <Compile Include="ConvertingCAD\SettingBackgroundAndDrawingColors.cs" />
     <Compile Include="ConvertingCAD\SettingCanvasSizeAndMode.cs" />
+    <Compile Include="DWF-Drawings\GetSizeOfDwfLayout.cs" />
     <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
     <Compile Include="DWG-Drawings\SearchText.cs" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />

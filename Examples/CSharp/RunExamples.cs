@@ -7,6 +7,7 @@ using Aspose.CAD.Examples.CSharp.DXF_Drawings;
 using Aspose.CAD.Examples.CSharp.ConvertingCAD;
 using Aspose.CAD.Examples.CSharp.Export;
 using Aspose.CAD.Examples.CSharp.Exporting_DGN;
+using Aspose.CAD.Examples.CSharp.DWF_Drawings;
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -21,12 +22,20 @@ namespace Aspose.CAD.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
+            //// DWF-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //GetSizeOfDwfLayout.Run();
+
+            //// =====================================================
+            //// =====================================================
             //// DWG-Drawings
             //// =====================================================
             //// =====================================================
-            
-           //ExportToPDF.Run();
-           // ExportSpecificLayoutToPDF.Run();
+
+            //ExportToPDF.Run();
+            // ExportSpecificLayoutToPDF.Run();
             //GetBlockAttributeValue.Run();
             //SearchText.Run();
             //SupportMLeaderEntityForDWGFormat.Run();
@@ -40,7 +49,7 @@ namespace Aspose.CAD.Examples.CSharp
             //ExportDXFToPDF.Run();
             //ExportDXFSpecificLayerToPDF.Run();
             //ExportDXFSpecificLayoutToPDF.Run();
-            
+
 
             //// =====================================================
             //// =====================================================
@@ -48,6 +57,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
+            GetSizeOfCADLayout.Run();
             //ConvertDrawingToRasterImage.Run();
             //ListLayouts.Run();
             //ConvertLayoutsToRasterImage.Run();
@@ -68,13 +78,14 @@ namespace Aspose.CAD.Examples.CSharp
             //CADLayoutsToPDF.Run();
             //ExportToBMP.Run();
             //ExportDWFToPDF.Run();
+
             //// =====================================================
             //// =====================================================
             //// Exporting-DGN
             //// =====================================================
             //// =====================================================
 
-            ExportDGNToPdf.Run();
+            //ExportDGNToPdf.Run();
             //ExportDGNToRasterImage.Run();
             
 
@@ -100,7 +111,12 @@ namespace Aspose.CAD.Examples.CSharp
         public static String GetDataDir_ConvertingCAD()
         {
             return Path.GetFullPath(GetDataDir_Data() + "ConvertingCAD/");
-        }        
+        }
+        public static String GetDataDir_DWFDrawings()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "DWF-Drawings/");
+        }
+
         private static string GetDataDir_Data()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;

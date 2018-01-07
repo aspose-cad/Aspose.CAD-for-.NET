@@ -3,6 +3,7 @@ Temp/
 obj/
 classes/
 generated/
+.vs/
 *.suo
 bin/
 *_out*

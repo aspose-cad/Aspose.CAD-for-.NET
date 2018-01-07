@@ -21,7 +21,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
                 {
                     // Create an object of DgnRasterizationOptions class and define/set different properties
-                    Aspose.CAD.ImageOptions.DgnRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.DgnRasterizationOptions();
+                    Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                     rasterizationOptions.PageWidth = 600;
                     rasterizationOptions.PageHeight = 300;
                     rasterizationOptions.CenterDrawing = true;
