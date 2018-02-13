@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.CAD for .NET](https://products.aspose.com/cad/net)
-+ **Download:** [Download Aspose.CAD for .NET](https://downloads.aspose.com/cad/net)
++ **Download:** [Download Aspose.CAD for .NET](https://www.nuget.org/packages/Aspose.CAD/)
 + **Documentation:** [Aspose.CAD for .NET Documentation](https://docs.aspose.com/display/cadnet/Home)
 + **Forum:** [Aspose.CAD for .NET Forum](https://forum.aspose.com/c/cad)
 + **Blog:** [Aspose.CAD for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose.cad-product-family/)
