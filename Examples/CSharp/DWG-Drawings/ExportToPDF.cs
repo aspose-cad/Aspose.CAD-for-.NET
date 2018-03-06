@@ -28,7 +28,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
                 MyDir = MyDir + "Bottom_plate_out.pdf";
-                // Export the DWG to PDF
+                //Export the DWG to PDF
                 image.Save(MyDir, pdfOptions);                
             }
             //ExEnd:ExportToPDF            

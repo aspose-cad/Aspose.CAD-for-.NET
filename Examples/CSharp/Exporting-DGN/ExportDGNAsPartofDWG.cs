@@ -53,7 +53,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                         DrawType = Aspose.CAD.FileFormats.Cad.CadDrawTypeMode.UseObjectColor
                     };
 
-                    // Export the DWG to PDF by calling Save method
+                    //Export the DWG to PDF by calling Save method
                     cadImage.Save(outPath, exportOptions);
                 }
                 //ExEnd:ExportDGNAsPartofDWG

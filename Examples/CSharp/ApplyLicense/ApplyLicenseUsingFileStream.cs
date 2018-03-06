@@ -11,7 +11,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
     {
         public static void Run()
         {
-            // ExStart:ApplyLicenseUsingFileStream
+            //ExStart:ApplyLicenseUsingFileStream
             // Set path of the license file, i.e. c:\temp\
             string dataDir = @"c:\temp\";
             // Load an existing file in the stream
@@ -19,7 +19,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
 
             License license = new License();
             license.SetLicense(LicStream);
-            // ExEnd:ApplyLicenseUsingFileStream
+            //ExEnd:ApplyLicenseUsingFileStream
         }
 
     }

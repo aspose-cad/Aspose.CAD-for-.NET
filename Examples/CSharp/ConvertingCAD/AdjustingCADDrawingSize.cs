@@ -34,7 +34,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set the layouts property
                 cadRasterizationOptions.Layouts = new string[] { "Model" };
 
-                // Export layout to BMP format
+                //Export layout to BMP format
                 string outPath = sourceFilePath + ".bmp";
                 image.Save(outPath, bmpOptions);
             }
@@ -65,7 +65,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set the layouts property
                 cadRasterizationOptions.Layouts = new string[] { "Model" };
 
-                // Export layout to BMP format
+                //Export layout to BMP format
                 string outPath = sourceFilePath + ".bmp";
                 image.Save(outPath, bmpOptions);
             }

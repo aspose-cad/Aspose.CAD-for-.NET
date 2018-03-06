@@ -11,7 +11,7 @@ namespace Aspose.CAD.Examples.CSharp.IFC_Drawings
     {
         public static void ExportToPNG()
         {
-        // ExStart:ExportingIFCtoPNG
+        //ExStart:ExportingIFCtoPNG
             //Setfile name path as other examples
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             string sourceFilePath = MyDir + "example.ifc";

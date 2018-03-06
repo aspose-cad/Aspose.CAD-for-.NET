@@ -31,7 +31,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
                 MyDir = MyDir + "result_out.pdf";
-                // Export the CAD to PDF
+                //Export the CAD to PDF
                 image.Save(MyDir, pdfOptions);
             }
             //ExEnd:SettingAutoLayoutScaling            

@@ -29,7 +29,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                // Export CAD to PDF
+                //Export CAD to PDF
                 image.Save(MyDir + "result_out.pdf", pdfOptions);
 
                 // Create an instance of TiffOptions
@@ -38,7 +38,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Set the VectorRasterizationOptions property
                 tiffOptions.VectorRasterizationOptions = rasterizationOptions;
 
-                // Export CAD to TIFF
+                //Export CAD to TIFF
                 image.Save(MyDir + "result_out.tiff", tiffOptions);
             }
             //ExEnd:SettingBackgroundAndDrawingColors            

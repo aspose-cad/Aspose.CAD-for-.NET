@@ -10,7 +10,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
 
         public static void Run()
         {
-            // ExStart:ApplyLicenseUsingFileStream
+            //ExStart:ApplyLicenseUsingFileStream
 
             // Create an instance of CAD Metered class
             Aspose.CAD.Metered metered = new Aspose.CAD.Metered();
@@ -35,7 +35,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
             // Display information
             Console.WriteLine("Amount Consumed After: " + amountafter.ToString());
 
-            // ExEnd:ApplyLicenseUsingFileStream
+            //ExEnd:ApplyLicenseUsingFileStream
         }
 
     }

@@ -28,7 +28,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
                 MyDir = MyDir + "conic_pyramid_out.pdf";
-                // Export the DXF to PDF
+                //Export the DXF to PDF
                 image.Save(MyDir, pdfOptions);                
             }
             //ExEnd:ExportDXFToPDF            

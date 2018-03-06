@@ -45,7 +45,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 rasterizationOptions.GraphicsOptions.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
                 rasterizationOptions.GraphicsOptions.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-                // Export to PDF by calling the Save method
+                //Export to PDF by calling the Save method
                 cadImage.Save(MyDir, pdfOptions);
             }
             //ExEnd:CADLayoutsToPDF            

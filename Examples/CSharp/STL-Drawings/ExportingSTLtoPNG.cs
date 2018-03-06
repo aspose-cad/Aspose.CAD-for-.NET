@@ -11,7 +11,7 @@ namespace Aspose.CAD.Examples.CSharp.STL_Drawings
     {
         public static void ExportToPNG() 
         {
-           // ExStart: ExportingSTLtoPNG
+           //ExStart: ExportingSTLtoPNG
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             string sourceFilePath = MyDir + "galeon.stl";
             using (var cadImage = (CadImage)Image.Load(sourceFilePath))

@@ -33,7 +33,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 var options = new Aspose.CAD.ImageOptions.JpegOptions();
                 // Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                 options.VectorRasterizationOptions = rasterizationOptions;
-                // Export each layer to Jpeg format
+                //Export each layer to Jpeg format
                 MyDir = MyDir + "CADLayersToRasterImageFormats_out.jpg";
                 image.Save(MyDir, options);
             }
@@ -72,7 +72,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     var options = new Aspose.CAD.ImageOptions.JpegOptions();
                     // Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                     options.VectorRasterizationOptions = rasterizationOptions;
-                    // Export each layer to Jpeg format
+                    //Export each layer to Jpeg format
                     image.Save(layerName + "_out.jpg", options);
                 }
             }
