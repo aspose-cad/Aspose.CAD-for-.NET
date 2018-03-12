@@ -39,7 +39,9 @@ namespace Aspose.CAD.Examples.CSharp
             //GetBlockAttributeValue.Run();
             //SearchText.Run();
             //SupportMLeaderEntityForDWGFormat.Run();
-
+            //AddTextInDWG.Run();
+            //ParticularDWGToImage.Run();
+            //ImportImageToDWG.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -49,7 +51,7 @@ namespace Aspose.CAD.Examples.CSharp
             //ExportDXFToPDF.Run();
             //ExportDXFSpecificLayerToPDF.Run();
             //ExportDXFSpecificLayoutToPDF.Run();
-
+            //SaveDXFFiles.Run();
 
             //// =====================================================
             //// =====================================================
@@ -57,7 +59,8 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            GetSizeOfCADLayout.Run();
+           //PenSupportInExport.Run();
+            //GetSizeOfCADLayout.Run();
             //ConvertDrawingToRasterImage.Run();
             //ListLayouts.Run();
             //ConvertLayoutsToRasterImage.Run();
