@@ -55,12 +55,16 @@
     <Compile Include="ConvertingCAD\CADLayersToRasterImageFormats.cs" />
     <Compile Include="ConvertingCAD\EnableTrackingForCADRendering.cs" />
     <Compile Include="ConvertingCAD\GetSizeOfCADLayout.cs" />
+    <Compile Include="ConvertingCAD\PenSupportInExport.cs" />
     <Compile Include="ConvertingCAD\SubstitutingFonts.cs" />
     <Compile Include="ConvertingCAD\SettingAutoLayoutScaling.cs" />
     <Compile Include="ConvertingCAD\SettingBackgroundAndDrawingColors.cs" />
     <Compile Include="ConvertingCAD\SettingCanvasSizeAndMode.cs" />
     <Compile Include="DWF-Drawings\GetSizeOfDwfLayout.cs" />
     <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
+    <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
+    <Compile Include="DWG-Drawings\ImportImageToDWG.cs" />
+    <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
     <Compile Include="DWG-Drawings\SearchText.cs" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.cs" />
@@ -69,6 +73,7 @@
     <Compile Include="DWG-Drawings\ExportSpecificLayoutToPDF.cs" />
     <Compile Include="DWG-Drawings\ExportToPDF.cs" />
     <Compile Include="ConvertingCAD\ListLayouts.cs" />
+    <Compile Include="DXF-Drawings\SaveDXFFiles.cs" />
     <Compile Include="Exporting-DGN\ExportDGNAsPartofDWG.cs" />
     <Compile Include="Exporting-DGN\ExportDGNToRasterImage.cs" />
     <Compile Include="Exporting-DGN\ExportDGNToPdf.cs" />
