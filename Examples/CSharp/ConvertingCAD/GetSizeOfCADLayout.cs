@@ -153,5 +153,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 
             return notEmptyLayouts;
         }
+     //ExEnd:GetSizeOfCADLayout
+    
     }
 }

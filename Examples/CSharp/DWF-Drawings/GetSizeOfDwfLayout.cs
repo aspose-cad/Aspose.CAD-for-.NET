@@ -56,6 +56,7 @@ namespace Aspose.CAD.Examples.CSharp.DWF_Drawings
                     }
                 }
             }
+            //ExEnd:GetSizeOfDwfLayout
         }
     }
 }

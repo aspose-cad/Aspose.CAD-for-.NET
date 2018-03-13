@@ -12,10 +12,10 @@ using Aspose.CAD.FileFormats.Cad.CadObjects.AttEntities;
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {    public class SearchText
     {
-        //ExStart:SearchText
+        
         public static void Run()
         {
-            
+            //ExStart:SearchText
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
             string sourceFilePath = MyDir + "sample.dwg";

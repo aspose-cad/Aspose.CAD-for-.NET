@@ -12,7 +12,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
         public static void Run()
         {
-            //ExStart: AccessingUnderlayFlagsofDWG
+            //ExStart:AccessingUnderlayFlagsofDWG
 
             // Input file name and path
             string fileName = "BlockRefDgn.dwg";
@@ -43,7 +43,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                     }
                 }
             }
-            //ExEnd: AccessingUnderlayFlagsofDWG
+            //ExEnd:AccessingUnderlayFlagsofDWG
         }
 
     }

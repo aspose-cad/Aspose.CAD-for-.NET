@@ -10,7 +10,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
     {
         public static void Run()
         {
-            //ExStart:AdjustingCADDrawingSizeUsingUnitType
+            //ExStart:AdjustingCADDrawingSize
 
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
