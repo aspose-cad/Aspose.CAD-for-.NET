@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.ImageOptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Drawing;
+using System.Drawing.Drawing2D;
 namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 {
     class PenSupportInExport
@@ -31,6 +34,11 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
     
     
    //ExEnd:PenSupportInExport
-     }    
+     }
+
+   private static System.IO.Stream GetFileFromDesktop(string p)
+   {
+       throw new NotImplementedException();
+   }    
     }
 }

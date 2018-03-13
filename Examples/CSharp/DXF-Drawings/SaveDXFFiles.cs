@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad;
 
 namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 {
@@ -15,7 +16,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DXFDrawings();
             string sourceFilePath = MyDir + "conic_pyramid.dxf";
-            using (CadImage cadImage = (CadImage)Image.Load(inputFile))
+            using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
             {
                 // any entities updates
                 cadImage.Save(MyDir+"conic.dxf");

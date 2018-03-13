@@ -10,7 +10,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
 
         public static void Run()
         {
-            //ExStart:ApplyLicenseUsingFileStream
+            //ExStart:MeteredLicensing
 
 
             // Access the setMeteredKey property and pass public and private keys as parameters
@@ -34,7 +34,7 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
             // Display information
             Console.WriteLine("Amount Consumed After: " + amountafter.ToString());
 
-            //ExEnd:ApplyLicenseUsingFileStream
+            //ExEnd:MeteredLicensing
         }
 
     }

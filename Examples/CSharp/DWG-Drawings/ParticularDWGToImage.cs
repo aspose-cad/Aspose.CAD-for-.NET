@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadConsts;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,6 +53,11 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
             //ExEnd:ParticularDWGToImage
     
+        }
+
+        private static string GetFileFromDesktop(string p)
+        {
+            throw new NotImplementedException();
         }
      }
 }

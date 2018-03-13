@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+using Aspose.CAD.ImageOptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +15,8 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
         string MyDir = RunExamples.GetDataDir_DWGDrawings();
         //ExStart:ImportImageToDWG
          string dwgPathToFile = MyDir +"Drawing11.dwg";
-         using (Image image = ImageLoader.Load(dwgPathToFile))
+         CadImage cadImage1 = (CadImage)Image.Load(dwgPathToFile);
+       // using (Image image = ImageLoader.Load(dwgPathToFile))
         {
             CadRasterImageDef cadRasterImageDef = new CadRasterImageDef();
             cadRasterImageDef.ObjectHandle = "A3B4";
@@ -33,7 +37,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             cadRasterImage.ClipBoundaryVertexList.Add(new Cad2DPoint(-0.5, 0.5));
             cadRasterImage.ClipBoundaryVertexList.Add(new Cad2DPoint(639.5, 561.5));
 
-            CadImage cadImage = (CadImage)image;
+           CadImage cadImage = (CadImage)cadImage1;
             cadImage.BlockEntities["*Model_Space"].AddEntity(cadRasterImage);
 
             List<CadBaseObject> list = new List<CadBaseObject>(cadImage.Objects);
@@ -49,7 +53,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             cadRasterizationOptions.PageHeight = 1600;
             cadRasterizationOptions.PageWidth = 1600;
             cadRasterizationOptions.Layouts = new string[] { "Model" };
-            image.Save(MyDir+"export2.pdf", pdfOptions);
+            cadImage1.Save(MyDir+"export2.pdf", pdfOptions);
         }
         //ExEnd:ImportImageToDWG
     }

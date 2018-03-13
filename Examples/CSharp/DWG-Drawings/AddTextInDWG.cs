@@ -8,6 +8,7 @@ using Aspose.CAD.FileFormats.Cad.CadObjects;
 using Aspose.CAD.FileFormats.Cad.CadConsts;
 using Aspose.CAD.FileFormats.Cad;
 using Aspose.CAD.FileFormats.Cad.CadObjects.AttEntities;
+using Aspose.CAD.ImageOptions;
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {
     class AddTextInDWG
@@ -43,6 +44,11 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             }
         
            //ExEnd:AddTextInDWG
+        }
+
+        private static System.IO.Stream GetFileFromDesktop(string p)
+        {
+            throw new NotImplementedException();
         }
     
     
