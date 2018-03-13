@@ -12,11 +12,10 @@ namespace Aspose.CAD.Examples.CSharp.ApplyLicense
         {
             //ExStart:ApplyLicenseUsingFileStream
 
-            // Create an instance of CAD Metered class
-            Aspose.CAD.Metered metered = new Aspose.CAD.Metered();
 
             // Access the setMeteredKey property and pass public and private keys as parameters
-            metered.SetMeteredKey("*****", "*****");
+            Aspose.CAD.Metered.SetMeteredKey("PublicKey", "PrivateKey");
+
 
             // Get metered data amount before calling API
             decimal amountbefore = Aspose.CAD.Metered.GetConsumptionQuantity();
