@@ -4,11 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {
     public class SupportMLeaderEntityForDWGFormat
      
     {
+        public class Assert
+        {
+            public static bool AreEqual(Object left, Object right)
+            {
+                return left == right;
+            }
+
+            public static bool AreEqual(Object left, Object right, Object epsilon)
+            {
+                return left == right;
+            }
+
+            public static bool AreNotEqual(Object left, Object right)
+            {
+                return left == right;
+            }
+        }
+
         public static void Run()
         {
             //ExStart:SupportMLeaderEntityForDWGFormat
@@ -18,7 +38,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             using (Image image = Image.Load(file))
             {
                 // Test
-                CadImage cadImage = (CadImage)image;
+                FileFormats.Cad.CadImage cadImage = (FileFormats.Cad.CadImage)image;
 
                 Assert.AreNotEqual(cadImage.Entities.Length, 0);
                 CadMLeader cadMLeader = (CadMLeader)cadImage.Entities[0];

@@ -68,6 +68,7 @@
     <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
     <Compile Include="DWG-Drawings\SearchText.cs" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />
+    <Compile Include="DWG-Drawings\SupportMLeaderEntityForDWGFormat.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayoutToPDF.cs" />
     <Compile Include="DXF-Drawings\ExportDXFToPDF.cs" />
