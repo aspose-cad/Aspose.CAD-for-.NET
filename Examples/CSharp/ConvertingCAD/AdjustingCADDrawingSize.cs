@@ -39,12 +39,12 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 image.Save(outPath, bmpOptions);
             }
 
-            //ExEnd:AdjustingCADDrawingSizeUsingUnitType
+          
         }
 
         public static void AutoAdjustingCADDrawingSize()
         {
-            //ExStart:AutoAdjustingCADDrawingSize
+         
 
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();

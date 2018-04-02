@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,12 +38,12 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 MyDir = MyDir + "CADLayersToRasterImageFormats_out.jpg";
                 image.Save(MyDir, options);
             }
-            //ExEnd:CADLayersToRasterImageFormats            
+                       
             Console.WriteLine("\nCAD layers converted successfully to raster image format.\nFile saved at " + MyDir);            
         }
         public static void ConvertAllLayersToRasterImageFormats()
         {
-            //ExStart:ConvertAllLayersToRasterImageFormats
+           
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             string sourceFilePath = MyDir + "conic_pyramid.dxf";
@@ -76,8 +77,9 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     image.Save(layerName + "_out.jpg", options);
                 }
             }
-            //ExEnd:ConvertAllLayersToRasterImageFormats
+           
             Console.WriteLine("\nCAD all layers converted successfully to raster image format.");
+            //ExEnd:CADLayersToRasterImageFormats
         }
 
     }

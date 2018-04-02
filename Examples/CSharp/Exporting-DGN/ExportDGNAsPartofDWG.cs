@@ -15,7 +15,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
         {
             try
             {
-                //ExStart: ExportDGNAsPartofDWG
+                //ExStart:ExportDGNAsPartofDWG
 
                 // Input and Output file paths
                 string fileName = "BlockRefDgn.dwg";

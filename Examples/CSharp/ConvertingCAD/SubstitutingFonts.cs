@@ -26,7 +26,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     style.PrimaryFontName = "Arial";
                 }
             }            
-            //ExEnd:SubstitutingFonts            
+                    
             Console.WriteLine("\nFont changed successfully.");
         }
         public static void SubstitutingFontByName()
@@ -48,7 +48,9 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     }
                 }
             }
-            //ExEnd:SubstitutingFontByName    
+       
         }
+
+        //ExEnd:SubstitutingFonts 
     }
 }
