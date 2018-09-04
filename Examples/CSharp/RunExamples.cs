@@ -18,85 +18,88 @@ namespace Aspose.CAD.Examples.CSharp
         {
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Uncomment the one you want to try out
+			// Uncomment the one you want to try out
 
-            //// =====================================================
-            //// =====================================================
-            //// DWF-Drawings
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			//// DWF-Drawings
+			//// =====================================================
+			//// =====================================================
 
-            //GetSizeOfDwfLayout.Run();
+			//GetSizeOfDwfLayout.Run();
 
-            //// =====================================================
-            //// =====================================================
-            //// DWG-Drawings
-            //// =====================================================
-            //// =====================================================
+			//// =====================================================
+			//// =====================================================
+			//// DWG-Drawings
+			//// =====================================================
+			//// =====================================================
 
-            //ExportToPDF.Run();
-            //ExportSpecificLayoutToPDF.Run();
-            //GetBlockAttributeValue.Run();
-            //SearchText.Run();
-            //SupportMLeaderEntityForDWGFormat.Run();
-            //AddTextInDWG.Run();
-            //ParticularDWGToImage.Run();
-            //ImportImageToDWG.Run();
-            //// =====================================================
-            //// =====================================================
-            //// DXF-Drawings
-            //// =====================================================
-            //// =====================================================
+			//ExportToPDF.Run();
+			//ExportSpecificLayoutToPDF.Run();
+			//GetBlockAttributeValue.Run();
+			//SearchText.Run();
+			//SupportMLeaderEntityForDWGFormat.Run();
+			//AddTextInDWG.Run();
+			//ParticularDWGToImage.Run();
+			//ImportImageToDWG.Run();
+			//// =====================================================
+			//// =====================================================
+			//// DXF-Drawings
+			//// =====================================================
+			//// =====================================================
 
-            //ExportDXFToPDF.Run();
-            //ExportDXFSpecificLayerToPDF.Run();
-            //ExportDXFSpecificLayoutToPDF.Run();
-            //SaveDXFFiles.Run();
+			//ExportDXFToPDF.Run();
+			//ExportDXFSpecificLayerToPDF.Run();
+			//ExportDXFSpecificLayoutToPDF.Run();
+			//SaveDXFFiles.Run();
+			//AddAttribute.Run();
+			//// =====================================================
+			//// =====================================================
+			//// ConvertingCAD
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            //// ConvertingCAD
-            //// =====================================================
-            //// =====================================================
+			//PenSupportInExport.Run();
+			//GetSizeOfCADLayout.Run();
+			//ConvertDrawingToRasterImage.Run();
+			//ListLayouts.Run();
+			//ConvertLayoutsToRasterImage.Run();
+			//MeshSupport.Run();
+			//IntegrateIGESFormat.Run();
+			//SettingCanvasSizeAndMode.Run();
+			//SettingBackgroundAndDrawingColors.Run();
+			//SettingAutoLayoutScaling.Run();
+			//EnableTrackingForCADRendering.Run();
+			//SubstitutingFonts.Run();
+			//CADLayersToRasterImageFormats.Run();
 
-           //PenSupportInExport.Run();
-            //GetSizeOfCADLayout.Run();
-            //ConvertDrawingToRasterImage.Run();
-            //ListLayouts.Run();
-            //ConvertLayoutsToRasterImage.Run();
-            //SettingCanvasSizeAndMode.Run();
-            //SettingBackgroundAndDrawingColors.Run();
-            //SettingAutoLayoutScaling.Run();
-            //EnableTrackingForCADRendering.Run();
-            //SubstitutingFonts.Run();
-            //CADLayersToRasterImageFormats.Run();
+			//// =====================================================
+			//// =====================================================
+			////Export
+			//// =====================================================
+			//// =====================================================
 
-            //// =====================================================
-            //// =====================================================
-            ////Export
-            //// =====================================================
-            //// =====================================================
+			//Export3DImagestoPDF.Run();
+			//CADLayoutsToPDF.Run();
+			//ExportToBMP.Run();
+			//ExportDWFToPDF.Run();
+			//DecomposeCADInsertObject.Run();
+			//ACADProxyEntities.Run();
+			//// =====================================================
+			//// =====================================================
+			////Exporting-DGN
+			//// =====================================================
+			//// =====================================================
 
-            //Export3DImagestoPDF.Run();
-            //CADLayoutsToPDF.Run();
-            //ExportToBMP.Run();
-            //ExportDWFToPDF.Run();
+			//ExportDGNToPdf.Run();
+			//ExportDGNToRasterImage.Run();
 
-            //// =====================================================
-            //// =====================================================
-            ////Exporting-DGN
-            //// =====================================================
-            //// =====================================================
 
-            //ExportDGNToPdf.Run();
-            //ExportDGNToRasterImage.Run();
-            
+			//add here
 
-            //add here
 
-            
-            // Stop before exiting
-            Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
+			// Stop before exiting
+			Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
         }
         public static String GetDataDir_ExportingDGN()

@@ -28,10 +28,9 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.CenterDrawing = true;
 
                 // Add the layer name to the CadRasterizationOptions's layer list
-                rasterizationOptions.Layers.Add("0"); // Most of the CAD drawings have a layer by name 0, you may specify any name
-
-                // Create an instance of JpegOptions (or any ImageOptions for raster formats)
-                var options = new Aspose.CAD.ImageOptions.JpegOptions();
+                rasterizationOptions.Layers= new string[] { "LayerA" };
+				// Create an instance of JpegOptions (or any ImageOptions for raster formats)
+				var options = new Aspose.CAD.ImageOptions.JpegOptions();
                 // Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                 options.VectorRasterizationOptions = rasterizationOptions;
                 //Export each layer to Jpeg format
@@ -67,10 +66,9 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     Console.WriteLine("Start with " + layerName);
 
                     // Add the layer name to the CadRasterizationOptions's layer list
-                    rasterizationOptions.Layers.Add(layerName);
-
-                    // Create an instance of JpegOptions (or any ImageOptions for raster formats)
-                    var options = new Aspose.CAD.ImageOptions.JpegOptions();
+                    rasterizationOptions.Layers = new string[] { "LayerA" };
+					// Create an instance of JpegOptions (or any ImageOptions for raster formats)
+					var options = new Aspose.CAD.ImageOptions.JpegOptions();
                     // Set VectorRasterizationOptions property to the instance of CadRasterizationOptions
                     options.VectorRasterizationOptions = rasterizationOptions;
                     //Export each layer to Jpeg format

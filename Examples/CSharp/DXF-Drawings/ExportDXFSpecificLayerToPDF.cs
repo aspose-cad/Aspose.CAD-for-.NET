@@ -21,10 +21,9 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                 rasterizationOptions.PageWidth = 1600;
                 rasterizationOptions.PageHeight = 1600;
                 // Add desired layers
-                rasterizationOptions.Layers.Add("0");
-
-                // Create an instance of PdfOptions
-                Aspose.CAD.ImageOptions.PdfOptions pdfOptions = new Aspose.CAD.ImageOptions.PdfOptions();
+                rasterizationOptions.Layers = new string[] { "LayerA" };
+				// Create an instance of PdfOptions
+				Aspose.CAD.ImageOptions.PdfOptions pdfOptions = new Aspose.CAD.ImageOptions.PdfOptions();
                 // Set the VectorRasterizationOptions property
                 pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
