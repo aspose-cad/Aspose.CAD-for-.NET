@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +69,7 @@
     <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
     <Compile Include="DWG-Drawings\ImportImageToDWG.cs" />
     <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
+    <Compile Include="DWG-Drawings\MeshSupportForDWG.cs" />
     <Compile Include="DWG-Drawings\SearchText.cs" />
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />
     <Compile Include="DWG-Drawings\SupportMLeaderEntityForDWGFormat.cs" />
@@ -89,6 +91,9 @@
     <Compile Include="ApplyLicense\ApplyLicenseByPath.cs" />
     <Compile Include="Export\PLTSupport.cs" />
     <Compile Include="IFC-Drawings\ExportingIFCtoPNG.cs" />
+    <Compile Include="IGES-Drawings\ExportIGEStoPDF.cs" />
+    <Compile Include="PLT-Drawings\ExportPLTtoPDF.cs" />
+    <Compile Include="PLT-Drawings\ExportPLTtoImage.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="STL-Drawings\ExportingSTLtoPNG.cs" />
@@ -97,7 +102,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

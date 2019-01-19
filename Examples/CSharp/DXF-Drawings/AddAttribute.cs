@@ -40,8 +40,8 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 						}
 					}
 				}
-
-				Assert.AreEqual(6, mtextList.Count);
+                 
+                Assert.AreEqual(6, mtextList.Count);
 				Assert.AreEqual(34, attribList.Count);
 			}
 		}
