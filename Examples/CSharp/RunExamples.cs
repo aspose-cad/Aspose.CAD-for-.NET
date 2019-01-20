@@ -116,8 +116,8 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //ExportPLTtoImage.Run();
-            //ExportPLTtoPDF.Run();
+            ExportPLTtoImage.Run();
+            ExportPLTtoPDF.Run();
 
             //add here
 

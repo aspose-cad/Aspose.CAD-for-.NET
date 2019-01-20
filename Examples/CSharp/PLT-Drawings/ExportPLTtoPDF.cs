@@ -17,7 +17,7 @@ namespace Aspose.CAD.Examples.CSharp.PLT_Drawings
             //ExStart:ExportPLTtoPDF
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_PLTDrawings();
-            string sourceFilePath = MyDir + "B747.plt";
+            string sourceFilePath = MyDir + "50states.plt";
            
             using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
             {
@@ -34,7 +34,7 @@ namespace Aspose.CAD.Examples.CSharp.PLT_Drawings
                 PdfOptions pdfOptions = new PdfOptions();
                 pdfOptions.VectorRasterizationOptions = options;
 
-                cadImage.Save(MyDir+ "B747.pdf", pdfOptions);
+                cadImage.Save(MyDir+ "50states.pdf", pdfOptions);
             }
             //ExEnd:ExportPLTtoPDF
         }
