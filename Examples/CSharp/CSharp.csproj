@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD, Version=18.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.CAD.18.8.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=19.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.CAD.19.2.0\lib\net40\Aspose.CAD.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,6 +68,9 @@
     <Compile Include="DWF-Drawings\SupportOfLayers.cs" />
     <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
     <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
+    <Compile Include="DWG-Drawings\ColorRendering.cs" />
+    <Compile Include="DWG-Drawings\DistinguishDWTAndDWGFormats.cs" />
+    <Compile Include="DWG-Drawings\DWGToDXF.cs" />
     <Compile Include="DWG-Drawings\ImportImageToDWG.cs" />
     <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
     <Compile Include="DWG-Drawings\MeshSupportForDWG.cs" />
@@ -74,6 +78,8 @@
     <Compile Include="DWG-Drawings\GetBlockAttributeValue.cs" />
     <Compile Include="DWG-Drawings\SupportMLeaderEntityForDWGFormat.cs" />
     <Compile Include="DXF-Drawings\AddAttribute.cs" />
+    <Compile Include="DXF-Drawings\ExportImagesToDXF.cs" />
+    <Compile Include="DXF-Drawings\SupportOfBlockClipping.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayerToPDF.cs" />
     <Compile Include="DXF-Drawings\ExportDXFSpecificLayoutToPDF.cs" />
     <Compile Include="DXF-Drawings\ExportDXFToPDF.cs" />
@@ -89,6 +95,8 @@
     <Compile Include="Export\DecomposeCADInsertObject.cs" />
     <Compile Include="Export\Export3DImagestoPDF.cs" />
     <Compile Include="ApplyLicense\ApplyLicenseByPath.cs" />
+    <Compile Include="Export\ExportDWFToPDF.cs" />
+    <Compile Include="Export\ExportToBMP.cs" />
     <Compile Include="Export\PLTSupport.cs" />
     <Compile Include="IFC-Drawings\ExportingIFCtoPNG.cs" />
     <Compile Include="IGES-Drawings\ExportIGEStoPDF.cs" />

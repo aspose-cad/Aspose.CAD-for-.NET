@@ -44,7 +44,9 @@ namespace Aspose.CAD.Examples.CSharp
             //AddTextInDWG.Run();
             //ParticularDWGToImage.Run();
             //ImportImageToDWG.Run();
-            MeshSupportForDWG.Run();
+            //MeshSupportForDWG.Run();
+            //ColorRendering.Run();
+            //DWGToDXF.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -56,6 +58,8 @@ namespace Aspose.CAD.Examples.CSharp
             //ExportDXFSpecificLayoutToPDF.Run();
             //SaveDXFFiles.Run();
             //AddAttribute.Run();
+            //SupportOfBlockClipping.Run();
+            //ExportImagesToDXF.Run();  
 
             //// =====================================================
             //// =====================================================
@@ -63,7 +67,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //PenSupportInExport.Run();
+            //PenSupportInExport.Run(); 
             //GetSizeOfCADLayout.Run();
             //ConvertDrawingToRasterImage.Run();
             //ListLayouts.Run();
@@ -107,7 +111,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            ExportIGEStoPDF.Run();
+            //ExportIGEStoPDF.Run();
 
 
             //// =====================================================
@@ -116,8 +120,8 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            ExportPLTtoImage.Run();
-            ExportPLTtoPDF.Run();
+            //ExportPLTtoImage.Run();
+            //ExportPLTtoPDF.Run();
 
             //add here
 
