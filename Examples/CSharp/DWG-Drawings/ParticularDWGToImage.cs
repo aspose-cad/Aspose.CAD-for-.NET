@@ -46,10 +46,10 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             // Set the VectorRasterizationOptions property
             pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-            String outFile = GetFileFromDesktop("result_out_generated.pdf");
+            string outFile = MyDir + "result_out_generated.pdf";
 
             // Export the CAD to PDF
-            cadImage.Save(MyDir, pdfOptions);
+            cadImage.Save(outFile, pdfOptions);
 
             //ExEnd:ParticularDWGToImage
     

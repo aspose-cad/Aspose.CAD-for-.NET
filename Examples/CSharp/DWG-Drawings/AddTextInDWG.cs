@@ -17,7 +17,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
             //ExStart:AddTextInDWG
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
-            string dwgPathToFile = MyDir + "sample.dwg";
+            string dwgPathToFile = MyDir + "SimpleEntites.dwg";
             using (Image image = Image.Load(dwgPathToFile))
             {
                 CadText cadText = new CadText();
@@ -40,7 +40,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 cadRasterizationOptions.PageHeight = 1600;
                 cadRasterizationOptions.PageWidth = 1600;
                 cadRasterizationOptions.Layouts = new string[] { "Model" };
-                image.Save(GetFileFromDesktop(MyDir+"SimpleEntites_generated.dwg.pdf"), pdfOptions);
+                image.Save(MyDir+"SimpleEntites_generated.pdf", pdfOptions);
             }
         
            //ExEnd:AddTextInDWG

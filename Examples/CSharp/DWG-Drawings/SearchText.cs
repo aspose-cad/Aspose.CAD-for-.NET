@@ -18,7 +18,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             //ExStart:SearchText
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
-            string sourceFilePath = MyDir + "sample.dwg";
+            string sourceFilePath = MyDir + "search.dwg";
             // Load an existing DWG file as CadImage.
             using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
             {
@@ -49,8 +49,11 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                         }
                     }
 
-                    // Collection cadBlockEntity.Entities contains information about all entities on specific layout if this collection has no elements it means layout is a copy of Model layout and contains the same entities
-                    Aspose.CAD.FileFormats.Cad.CadObjects.CadBlockEntity cadBlockEntity = cadImage.BlockEntities[blockTableObjectReference.BlockName];
+                    if (blockTableObjectReference !=null)
+                    {
+                        // Collection cadBlockEntity.Entities contains information about all entities on specific layout if this collection has no elements it means layout is a copy of Model layout and contains the same entities
+                        Aspose.CAD.FileFormats.Cad.CadObjects.CadBlockEntity cadBlockEntity = cadImage.BlockEntities[blockTableObjectReference.BlockName];
+                    }
                 }
 
                 //Export to pdf
@@ -73,9 +76,12 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
       
      public static void SearchTextInDWGAutoCADFile() 
-       { 
-           // Load an existing DWG file as CadImage. 
-           CadImage cadImage = (CadImage) Image.Load("C:\\dwg\\sample_file3.dwg"); 
+       {
+            // The path to the documents directory.
+            string MyDir = RunExamples.GetDataDir_DWGDrawings();
+            string sourceFilePath = MyDir + "search.dwg";
+            // Load an existing DWG file as CadImage. 
+            CadImage cadImage = (CadImage) Image.Load(sourceFilePath); 
           
            // Search for text in the entities section 
            foreach (var entity in cadImage.Entities) { 
