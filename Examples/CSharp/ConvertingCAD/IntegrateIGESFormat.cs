@@ -11,7 +11,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 		{
 			//ExStart:IntegrateIGESFormat
 
-			string MyDir = RunExamples.GetDataDir_ConvertingCAD();
+			string MyDir = RunExamples.GetDataDir_IGESDrawings();
 
 			string sourceFilePath = MyDir + ("figa2.igs");
 			string outPath = MyDir + ("meshes.pdf");

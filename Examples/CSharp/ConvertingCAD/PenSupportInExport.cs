@@ -30,7 +30,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 
        pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
-       cadImage.Save(GetFileFromDesktop(MyDir+"9LHATT-A56_generated.pdf"), pdfOptions);
+       cadImage.Save(MyDir+"9LHATT-A56_generated.pdf", pdfOptions);
     
     
    //ExEnd:PenSupportInExport

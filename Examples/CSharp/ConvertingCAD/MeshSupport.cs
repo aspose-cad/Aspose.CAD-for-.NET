@@ -13,7 +13,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 		{
 
 			//ExStart:MeshSupport
-			string MyDir = RunExamples.GetDataDir_ConvertingCAD();
+			string MyDir = RunExamples.GetDataDir_DWGDrawings();
 		
 			string sourceFilePath = MyDir+("meshes.dwg");
 			string outPath = MyDir+("meshes.pdf");
