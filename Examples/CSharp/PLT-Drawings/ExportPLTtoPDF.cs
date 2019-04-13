@@ -19,7 +19,7 @@ namespace Aspose.CAD.Examples.CSharp.PLT_Drawings
             string MyDir = RunExamples.GetDataDir_PLTDrawings();
             string sourceFilePath = MyDir + "50states.plt";
            
-            using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
+            using (Image cadImage = Image.Load(sourceFilePath))
             {
 
                 CadRasterizationOptions options = new CadRasterizationOptions
