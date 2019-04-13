@@ -14,22 +14,26 @@ namespace Aspose.CAD.Examples.CSharp.Export
             //ExStart:ExportDWFToPDF
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
-            string fileName = GetFileFromDesktop("APFH Floor Plan.dwf");
-            using (Aspose.CAD.Image image = Aspose.CAD.Image.Load(fileName))
+            string fileName = MyDir + "18-12-11 9644 - site.dwf";
+            using (Image image = Image.Load(fileName))
             {
-                var pdfOptions = new PdfOptions();
-                var dwfRasterizationOptions = new DwfRasterizationOptions();
-                pdfOptions.VectorRasterizationOptions = dwfRasterizationOptions;
+                
+                CadRasterizationOptions dwfRasterizationOptions = new CadRasterizationOptions();                
                 dwfRasterizationOptions.CenterDrawing = true;
                 dwfRasterizationOptions.PageHeight = 500;
                 dwfRasterizationOptions.PageWidth = 500;
-                dwfRasterizationOptions.Layouts = new string[] { "Model" };
+               
+
+                PdfOptions pdfOptions = new PdfOptions();
+                pdfOptions.VectorRasterizationOptions = dwfRasterizationOptions;
+
                 // export
-                string outPath = fileName + ".pdf";
+                string outPath = MyDir + "18-12-11 9644 - site.pdf";
                 image.Save(outPath, pdfOptions);
-            
-            //ExEnd:ExportDWFToPDF          
-            Console.WriteLine("\n3D images exported successfully to PDF.\nFile saved at " + MyDir);
+
+                //ExEnd:ExportDWFToPDF          
+                Console.WriteLine("\n3D images exported successfully to PDF.\nFile saved at " + MyDir);
+            }
         }
     }
 }

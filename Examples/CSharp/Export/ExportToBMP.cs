@@ -14,26 +14,26 @@ namespace Aspose.CAD.Examples.CSharp.Export
             //ExStart:ExportToBMP
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
-           
 
-           string fileName = GetFileFromDesktop("APFH Floor Plan.dwf");
-            using (Aspose.CAD.Image image = Aspose.CAD.Image.Load(fileName))
+
+            string inputFile = MyDir + "18-12-11 9644 - site.dwf";
+            using (Image image = Image.Load(inputFile))
             {
                 BmpOptions bmpOptions = new BmpOptions();
-                var dwfRasterizationOptions = new DwfRasterizationOptions();
+                var dwfRasterizationOptions = new CadRasterizationOptions();
                 bmpOptions.VectorRasterizationOptions = dwfRasterizationOptions;
                 dwfRasterizationOptions.CenterDrawing = true;
                 dwfRasterizationOptions.PageHeight = 500;
                 dwfRasterizationOptions.PageWidth = 500;
-                dwfRasterizationOptions.Layouts = new string[] { "Model" };
+                
                 // export
-                string outPath = fileName + ".bmp";
+                string outPath = MyDir + "18-12-11 9644 - site.bmp";
                 image.Save(outPath, bmpOptions);
             }
             
             
             //ExEnd:ExportToBMP           
-            Console.WriteLine("\n3D images exported successfully to PDF.\nFile saved at " + MyDir);
+            Console.WriteLine("\n3D images exported successfully to BMP.\nFile saved at " + MyDir);
         }
     }
 }
