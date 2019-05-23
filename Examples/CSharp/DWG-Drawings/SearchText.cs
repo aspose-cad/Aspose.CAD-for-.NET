@@ -61,7 +61,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 rasterizationOptions.PageWidth = 1600;
                 rasterizationOptions.PageHeight = 1600;
                 rasterizationOptions.AutomaticLayoutsScaling = true;
-                rasterizationOptions.CenterDrawing = true;
+                //rasterizationOptions.CenterDrawing = true;
 
                 // Please, note: if cadBlockEntity collection mentioned above (for dwg) for selected layout or entitiesOnLayouts collection by layout's BlockTableRecordHandle (for dxf) is empty - export result file will be empty and you should draw Model layout instead
                 rasterizationOptions.Layouts = new[] { "Layout1" };

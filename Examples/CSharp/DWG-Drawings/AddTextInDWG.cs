@@ -36,7 +36,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 CadRasterizationOptions cadRasterizationOptions = new CadRasterizationOptions();
                 pdfOptions.VectorRasterizationOptions = cadRasterizationOptions;
                 cadRasterizationOptions.DrawType = CadDrawTypeMode.UseObjectColor;
-                cadRasterizationOptions.CenterDrawing = true;
+                //cadRasterizationOptions.CenterDrawing = true;
                 cadRasterizationOptions.PageHeight = 1600;
                 cadRasterizationOptions.PageWidth = 1600;
                 cadRasterizationOptions.Layouts = new string[] { "Model" };

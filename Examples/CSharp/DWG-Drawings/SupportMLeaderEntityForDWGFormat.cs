@@ -34,7 +34,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             //ExStart:SupportMLeaderEntityForDWGFormat
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
-            string file = "file path";
+            string file = MyDir + "sample.dwg";
             using (Image image = Image.Load(file))
             {
                 // Test
