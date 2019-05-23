@@ -47,6 +47,7 @@ namespace Aspose.CAD.Examples.CSharp
             //MeshSupportForDWG.Run();
             //ColorRendering.Run();
             //DWGToDXF.Run();
+            //ExportToSVG.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -59,7 +60,8 @@ namespace Aspose.CAD.Examples.CSharp
             //SaveDXFFiles.Run();
             //AddAttribute.Run();
             //SupportOfBlockClipping.Run();
-            //ExportImagesToDXF.Run();  
+            //ExportImagesToDXF.Run();
+            //EnableTracking.Run();
 
             //// =====================================================
             //// =====================================================
