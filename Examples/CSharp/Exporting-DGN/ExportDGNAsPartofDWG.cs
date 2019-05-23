@@ -45,7 +45,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     {
                         PageWidth = 1600,
                         PageHeight = 1600,
-                        CenterDrawing = true,
+                        //CenterDrawing = true,
                         Layouts = new string[] { "Model" },
                         AutomaticLayoutsScaling = false,
                         NoScaling = true,
