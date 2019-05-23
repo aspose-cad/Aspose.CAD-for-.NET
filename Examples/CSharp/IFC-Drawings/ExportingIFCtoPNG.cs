@@ -18,7 +18,7 @@ namespace Aspose.CAD.Examples.CSharp.IFC_Drawings
             using (IfcImage cadImage = (IfcImage)Image.Load(sourceFilePath))
             {
                 CadRasterizationOptions rasterizationOptions = new CadRasterizationOptions();
-                rasterizationOptions.CenterDrawing = true;
+               // rasterizationOptions.CenterDrawing = true;
                 rasterizationOptions.PageWidth = 100;
                 rasterizationOptions.PageHeight = 100;
 
