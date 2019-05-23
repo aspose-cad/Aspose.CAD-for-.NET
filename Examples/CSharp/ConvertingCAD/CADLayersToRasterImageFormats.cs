@@ -25,7 +25,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.PageHeight = 500;
 
                 // Set the drawing to render at the center of image
-                rasterizationOptions.CenterDrawing = true;
+                //rasterizationOptions.CenterDrawing = true;
 
                 // Add the layer name to the CadRasterizationOptions's layer list
                 rasterizationOptions.Layers= new string[] { "LayerA" };
@@ -55,7 +55,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.PageWidth = 500;
                 rasterizationOptions.PageHeight = 500;
                 // Set the drawing to render at the center of image
-                rasterizationOptions.CenterDrawing = true;
+               // rasterizationOptions.CenterDrawing = true;
 
                 // Get the layers in an instance of CadLayersDictionary
                 var layersList = image.Layers;
