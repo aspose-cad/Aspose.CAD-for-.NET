@@ -22,7 +22,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 BmpOptions bmpOptions = new BmpOptions();
                 var dwfRasterizationOptions = new CadRasterizationOptions();
                 bmpOptions.VectorRasterizationOptions = dwfRasterizationOptions;
-                dwfRasterizationOptions.CenterDrawing = true;
+                //dwfRasterizationOptions.CenterDrawing = true;
                 dwfRasterizationOptions.PageHeight = 500;
                 dwfRasterizationOptions.PageWidth = 500;
                 

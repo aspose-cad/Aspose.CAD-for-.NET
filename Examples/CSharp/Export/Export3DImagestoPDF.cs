@@ -20,7 +20,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                 rasterizationOptions.PageWidth = 500;
                 rasterizationOptions.PageHeight = 500;
-                rasterizationOptions.TypeOfEntities = TypeOfEntities.Entities3D;
+               // rasterizationOptions.TypeOfEntities = TypeOfEntities.Entities3D;
 
                 rasterizationOptions.Layouts = new string[] { "Model" };
                 PdfOptions pdfOptions = new PdfOptions();

@@ -25,7 +25,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
                 rasterizationOptions.PageHeight = 1600;
 
                 // Set the Entities type property to Entities3D.
-                rasterizationOptions.TypeOfEntities = TypeOfEntities.Entities3D;
+                //rasterizationOptions.TypeOfEntities = TypeOfEntities.Entities3D;
 
                 rasterizationOptions.AutomaticLayoutsScaling = true;
                 rasterizationOptions.NoScaling = false;

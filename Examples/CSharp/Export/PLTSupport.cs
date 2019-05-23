@@ -20,7 +20,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
 			{
 				PageHeight = 500,
 				PageWidth = 1000,
-				CenterDrawing = true
+				//CenterDrawing = true
 			};
 			imageOptions.VectorRasterizationOptions = options;
 			image.Save((MyDir+"themepark.jpg"), imageOptions);
