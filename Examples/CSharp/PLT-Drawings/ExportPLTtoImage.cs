@@ -26,7 +26,7 @@ namespace Aspose.CAD.Examples.CSharp.PLT_Drawings
                 {
                     PageHeight = 500,
                     PageWidth = 1000,
-                    CenterDrawing = true
+                    //CenterDrawing = true
                 };
                 imageOptions.VectorRasterizationOptions = options;
                 cadImage.Save(MyDir+ "50states.jpg", imageOptions);
