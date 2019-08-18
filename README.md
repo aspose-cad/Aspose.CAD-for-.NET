@@ -15,6 +15,21 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn and explore the API features
 
+
+## How to Run the Examples
++ You can either clone the repository using your favorite GitHub client or download the ZIP file from here.
++ Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
++ There is a Visual Studio solution file for C#.
++ The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher.
++ Open the solution file in Visual Studio and build the project.
++ On first run the dependencies will automatically be downloaded via NuGet.
++ **Data** folder at the root folder of **Examples** contains input files which CSharp examples used. It is mandatory that you download the **Data** folder along with the examples project.
++ Open RunExamples.cs file, all the examples are called from here.
++ Uncomment the examples you want to run from within the project.
+
+Please find more details for how to run the examples [here](https://docs.aspose.com/display/cadnet/How+to+Run+the+Examples). 
+
+
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
