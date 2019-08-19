@@ -24,6 +24,14 @@ namespace Aspose.CAD.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
+            //// Features
+            //// =====================================================
+            //// =====================================================
+
+            FreePointOfView.Run();
+
+            //// =====================================================
+            //// =====================================================
             //// DWF-Drawings
             //// =====================================================
             //// =====================================================
@@ -99,7 +107,7 @@ namespace Aspose.CAD.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            ////Exporting-DGN
+            ////DGN-Drawings
             //// =====================================================
             //// =====================================================
 
@@ -134,7 +142,7 @@ namespace Aspose.CAD.Examples.CSharp
         }
         public static String GetDataDir_ExportingDGN()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "Exporting-DGN/");
+            return Path.GetFullPath(GetDataDir_Data() + "DGN-Drawings/");
         }
         public static String GetDataDir_DWGDrawings()
         {
@@ -177,7 +185,8 @@ namespace Aspose.CAD.Examples.CSharp
             {
                 startDirectory = parent.FullName;
             }
-            return Path.Combine(startDirectory, "Data\\");
+
+            return Path.Combine(startDirectory, @"Data\");
         }
         public static string GetOutputFilePath(String inputFilePath)
         {

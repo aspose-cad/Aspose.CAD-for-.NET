@@ -87,9 +87,9 @@
     <Compile Include="DWG-Drawings\ExportToPDF.cs" />
     <Compile Include="ConvertingCAD\ListLayouts.cs" />
     <Compile Include="DXF-Drawings\SaveDXFFiles.cs" />
-    <Compile Include="Exporting-DGN\ExportDGNAsPartofDWG.cs" />
-    <Compile Include="Exporting-DGN\ExportDGNToRasterImage.cs" />
-    <Compile Include="Exporting-DGN\ExportDGNToPdf.cs" />
+    <Compile Include="DGN-Drawings\ExportDGNAsPartofDWG.cs" />
+    <Compile Include="DGN-Drawings\ExportDGNToRasterImage.cs" />
+    <Compile Include="DGN-Drawings\ExportDGNToPdf.cs" />
     <Compile Include="Export\ACADProxyEntities.cs" />
     <Compile Include="Export\CADLayoutsToPDF.cs" />
     <Compile Include="Export\DecomposeCADInsertObject.cs" />
@@ -98,6 +98,7 @@
     <Compile Include="Export\ExportDWFToPDF.cs" />
     <Compile Include="Export\ExportToBMP.cs" />
     <Compile Include="Export\PLTSupport.cs" />
+    <Compile Include="Features\FreePointOfView.cs" />
     <Compile Include="IFC-Drawings\ExportingIFCtoPNG.cs" />
     <Compile Include="IGES-Drawings\ExportIGEStoPDF.cs" />
     <Compile Include="PLT-Drawings\ExportPLTtoPDF.cs" />
