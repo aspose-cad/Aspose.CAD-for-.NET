@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.CAD, Version=19.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.CAD.19.7.0\lib\net40\Aspose.CAD.dll</HintPath>
+      <HintPath>packages\Aspose.CAD.19.7.0\lib\net40\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
