@@ -34,14 +34,14 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             //ExStart:SupportMLeaderEntityForDWGFormat
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
-            string file = MyDir + "sample.dwg";
+            string file = MyDir + "Multileaders.dwg";
             using (Image image = Image.Load(file))
             {
                 // Test
                 FileFormats.Cad.CadImage cadImage = (FileFormats.Cad.CadImage)image;
 
                 Assert.AreNotEqual(cadImage.Entities.Length, 0);
-                CadMLeader cadMLeader = (CadMLeader)cadImage.Entities[0];
+                CadMLeader cadMLeader = (CadMLeader)cadImage.Entities[2];
 
                 Assert.AreEqual(cadMLeader.StyleDescription, "Standard");
                 Assert.AreEqual(cadMLeader.LeaderStyleId, "12E");

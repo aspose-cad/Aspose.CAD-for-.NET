@@ -14,8 +14,11 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
         {
             //ExStart:AccessingUnderlayFlagsofDWG
 
+            // The path to the documents directory.
+            string MyDir = RunExamples.GetDataDir_DWGDrawings();
+
             // Input file name and path
-            string fileName = "BlockRefDgn.dwg";
+            string fileName = MyDir + "BlockRefDgn.dwg";
 
             // Load an existing DWG file and convert it into CadImage 
             using (Aspose.CAD.FileFormats.Cad.CadImage image = (Aspose.CAD.FileFormats.Cad.CadImage)Image.Load(fileName))
