@@ -10,6 +10,8 @@ using Aspose.CAD.Examples.CSharp.Exporting_DGN;
 using Aspose.CAD.Examples.CSharp.DWF_Drawings;
 using Aspose.CAD.Examples.CSharp.IGES_Drawings;
 using Aspose.CAD.Examples.CSharp.PLT_Drawings;
+using Aspose.CAD.Examples.CSharp.IFC_Drawings;
+using Aspose.CAD.Examples.CSharp.STL_Drawings;
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -28,7 +30,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            FreePointOfView.Run();
+            //FreePointOfView.Run();
 
             //// =====================================================
             //// =====================================================
@@ -37,13 +39,14 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //GetSizeOfDwfLayout.Run();
-
+            //SupportOfLayers.Run();
             //// =====================================================
             //// =====================================================
             //// DWG-Drawings
             //// =====================================================
             //// =====================================================
-
+            
+            //AccessingUnderlayFlagsofDWG.Run();
             //ExportToPDF.Run();
             //ExportSpecificLayoutToPDF.Run();
             //GetBlockAttributeValue.Run();
@@ -56,6 +59,7 @@ namespace Aspose.CAD.Examples.CSharp
             //ColorRendering.Run();
             //DWGToDXF.Run();
             //ExportToSVG.Run();
+            //LargeDWGToPDF.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -76,7 +80,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// ConvertingCAD
             //// =====================================================
             //// =====================================================
-
+            //AdjustingCADDrawingSize.Run();
             //PenSupportInExport.Run(); 
             //GetSizeOfCADLayout.Run();
             //ConvertDrawingToRasterImage.Run();
@@ -103,7 +107,7 @@ namespace Aspose.CAD.Examples.CSharp
             //ExportDWFToPDF.Run();
             //DecomposeCADInsertObject.Run();
             //ACADProxyEntities.Run();
-
+            //PLTSupport.Run();
 
             //// =====================================================
             //// =====================================================
@@ -113,8 +117,16 @@ namespace Aspose.CAD.Examples.CSharp
 
             //ExportDGNToPdf.Run();
             //ExportDGNToRasterImage.Run();
+            //ExportDGNAsPartofDWG.Run();
 
+            //// =====================================================
+            //// =====================================================
+            //// IFC-Drawings
+            //// =====================================================
+            //// =====================================================
 
+            //ExportingIFCtoPNG.ExportToPNG();
+ 
             //// =====================================================
             //// =====================================================
             //// IGES-Drawings
@@ -132,7 +144,14 @@ namespace Aspose.CAD.Examples.CSharp
 
             //ExportPLTtoImage.Run();
             //ExportPLTtoPDF.Run();
+           
+            //// =====================================================
+            //// =====================================================
+            //// STL-Drawings
+            //// =====================================================
+            //// =====================================================
 
+            //ExportingSTLtoPNG.Run();
             //add here
 
 
