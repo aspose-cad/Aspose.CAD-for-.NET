@@ -18,7 +18,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DXFDrawings();
 
-            foreach (var file in new DirectoryInfo(MyDir).EnumerateFiles("*.dxf"))
+            foreach (var file in new DirectoryInfo(MyDir).EnumerateFiles("conic.dxf"))
             {
                 // ****************************
                 //  Set new font per document
