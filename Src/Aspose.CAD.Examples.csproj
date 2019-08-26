@@ -70,6 +70,7 @@
     <Compile Include="DWG-Drawings\ColorRendering.cs" />
     <Compile Include="DWG-Drawings\DWGToDXF.cs" />
     <Compile Include="DWG-Drawings\ExportToSVG.cs" />
+    <Compile Include="DWG-Drawings\LargeDWGToPDF.cs" />
     <Compile Include="DXF-Drawings\EnableTracking.cs" />
     <Compile Include="DWG-Drawings\ImportImageToDWG.cs" />
     <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
