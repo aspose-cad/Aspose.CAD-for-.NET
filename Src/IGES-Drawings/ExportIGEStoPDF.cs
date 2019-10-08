@@ -26,7 +26,7 @@ namespace Aspose.CAD.Examples.CSharp.IGES_Drawings
                 {
                     PageHeight = 1000,
                     PageWidth = 1000,
-                    //CenterDrawing = true,
+                    
                 };
 
                 PdfOptions pdfOptions = new PdfOptions();
