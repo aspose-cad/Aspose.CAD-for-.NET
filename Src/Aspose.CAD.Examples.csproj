@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD, Version=19.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>packages\Aspose.CAD.19.7.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=19.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.CAD.19.9.0\lib\net40\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,7 +68,9 @@
     <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
     <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
     <Compile Include="DWG-Drawings\ColorRendering.cs" />
+    <Compile Include="DWG-Drawings\DWGToCompliancePDF.cs" />
     <Compile Include="DWG-Drawings\DWGToDXF.cs" />
+    <Compile Include="DWG-Drawings\ExportOLEObjects.cs" />
     <Compile Include="DWG-Drawings\ExportToSVG.cs" />
     <Compile Include="DWG-Drawings\LargeDWGToPDF.cs" />
     <Compile Include="DXF-Drawings\EnableTracking.cs" />
@@ -99,7 +101,11 @@
     <Compile Include="Export\ExportDWFToPDF.cs" />
     <Compile Include="Export\ExportToBMP.cs" />
     <Compile Include="Export\PLTSupport.cs" />
+    <Compile Include="Features\AddWatermark.cs" />
+    <Compile Include="Features\CFFToPDF.cs" />
     <Compile Include="Features\FreePointOfView.cs" />
+    <Compile Include="Features\SinglePDFWithDifferentLayouts.cs" />
+    <Compile Include="Hyperlinks\EditHyperlink.cs" />
     <Compile Include="IFC-Drawings\ExportingIFCtoPNG.cs" />
     <Compile Include="IGES-Drawings\ExportIGEStoPDF.cs" />
     <Compile Include="PLT-Drawings\ExportPLTtoPDF.cs" />
