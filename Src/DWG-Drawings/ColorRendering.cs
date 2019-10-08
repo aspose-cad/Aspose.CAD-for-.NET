@@ -27,7 +27,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
                     CadRasterizationOptions options = new CadRasterizationOptions();
                     options.NoScaling = false;
-                    //options.CenterDrawing = true;
+                    
                     options.PageHeight = document.Height * 10;
                     options.PageWidth = document.Width * 10;
                     options.DrawType = Aspose.CAD.FileFormats.Cad.CadDrawTypeMode.UseObjectColor;
