@@ -25,7 +25,7 @@ namespace Aspose.CAD.Examples.CSharp.DWF_Drawings
 				// Add desired layers
 				rasterizationOptions.Layers= new string[] { "LayerA" };
 				
-				//rasterizationOptions.CenterDrawing = true;
+				
 
 				JpegOptions jpegOptions = new JpegOptions();
 				jpegOptions.VectorRasterizationOptions = rasterizationOptions;

@@ -49,7 +49,7 @@ namespace Aspose.CAD.Examples.CSharp.DWF_Drawings
                             options.PageWidth = (float)sizeExtX;
                         }
 
-                        //options.CenterDrawing = true;
+                        
                         jpegOptions.VectorRasterizationOptions = options;
 
                         image.Save(fs, jpegOptions);
