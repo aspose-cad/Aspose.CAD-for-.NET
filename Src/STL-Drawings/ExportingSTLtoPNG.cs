@@ -17,7 +17,7 @@ namespace Aspose.CAD.Examples.CSharp.STL_Drawings
             using (var cadImage = (CadImage)Image.Load(sourceFilePath))
             {
                 var rasterizationOptions = new CadRasterizationOptions();
-                //rasterizationOptions.CenterDrawing = true;
+                
                 rasterizationOptions.PageWidth = 100;
                 rasterizationOptions.PageHeight = 100;
 
