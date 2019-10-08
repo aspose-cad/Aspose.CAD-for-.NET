@@ -12,6 +12,8 @@ using Aspose.CAD.Examples.CSharp.IGES_Drawings;
 using Aspose.CAD.Examples.CSharp.PLT_Drawings;
 using Aspose.CAD.Examples.CSharp.IFC_Drawings;
 using Aspose.CAD.Examples.CSharp.STL_Drawings;
+using Aspose.CAD.Examples.CSharp.Hyperlinks;
+using Aspose.CAD.Examples.CSharp.Features;
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -31,6 +33,9 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //FreePointOfView.Run();
+            //CFFToPDF.Run();
+            //AddWatermark.Run();
+            //SinglePDFWithDifferentLayouts.Run();
 
             //// =====================================================
             //// =====================================================
@@ -60,6 +65,9 @@ namespace Aspose.CAD.Examples.CSharp
             //DWGToDXF.Run();
             //ExportToSVG.Run();
             //LargeDWGToPDF.Run();
+            //DWGToCompliancePDF.Run();
+            //EditHyperlink.Run();
+            //ExportOLEObjects.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -186,6 +194,11 @@ namespace Aspose.CAD.Examples.CSharp
         public static String GetDataDir_DWFDrawings()
         {
             return Path.GetFullPath(GetDataDir_Data() + "DWF-Drawings/");
+        }
+        
+        public static String GetDataDir_ConvertingCFF()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "CFF/");
         }
 
         private static string GetDataDir_Data()
