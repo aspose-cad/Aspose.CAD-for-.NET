@@ -19,7 +19,7 @@ namespace Aspose.CAD.Examples.CSharp.Export
             {
                 
                 CadRasterizationOptions dwfRasterizationOptions = new CadRasterizationOptions();                
-                //dwfRasterizationOptions.CenterDrawing = true;
+                
                 dwfRasterizationOptions.PageHeight = 500;
                 dwfRasterizationOptions.PageWidth = 500;
                
