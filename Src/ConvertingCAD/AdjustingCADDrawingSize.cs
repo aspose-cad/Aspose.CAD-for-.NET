@@ -26,8 +26,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Create an instance of CadRasterizationOptions and set its various properties
                 Aspose.CAD.ImageOptions.CadRasterizationOptions cadRasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                 bmpOptions.VectorRasterizationOptions = cadRasterizationOptions;
-                //cadRasterizationOptions.CenterDrawing = true;
-
+                
                 // Set the UnitType property
                 cadRasterizationOptions.UnitType = Aspose.CAD.ImageOptions.UnitType.Centimenter;
 
@@ -60,8 +59,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 // Create an instance of CadRasterizationOptions and set its various properties
                 Aspose.CAD.ImageOptions.CadRasterizationOptions cadRasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                 bmpOptions.VectorRasterizationOptions = cadRasterizationOptions;
-                //cadRasterizationOptions.CenterDrawing = true;
-                            
+                                            
                 // Set the layouts property
                 cadRasterizationOptions.Layouts = new string[] { "Model" };
 

@@ -77,7 +77,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                                 }
                             }
 
-                            //options.CenterDrawing = true;
+                            
                             jpegOptions.VectorRasterizationOptions = options;
 
                             cadImage.Save(fs, jpegOptions);
