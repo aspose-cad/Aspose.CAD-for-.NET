@@ -44,8 +44,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     exportOptions.VectorRasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions()
                     {
                         PageWidth = 1600,
-                        PageHeight = 1600,
-                        //CenterDrawing = true,
+                        PageHeight = 1600,                      
                         Layouts = new string[] { "Model" },
                         AutomaticLayoutsScaling = false,
                         NoScaling = true,
