@@ -27,7 +27,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                     PageHeight = 1600,
                     BorderX = 30,
                     BorderY = 5,
-                    //CenterDrawing = true,
+                    
                     Layouts = new string[] { "Model" }
                 };
 
