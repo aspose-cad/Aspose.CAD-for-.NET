@@ -26,7 +26,7 @@ namespace Aspose.CAD.Examples.CSharp.PLT_Drawings
                 {
                     PageHeight = 1600,
                     PageWidth = 1600,
-                    //CenterDrawing = true,
+                    
                     DrawType= CadDrawTypeMode.UseObjectColor,
                     BackgroundColor=Color.White
                 };
