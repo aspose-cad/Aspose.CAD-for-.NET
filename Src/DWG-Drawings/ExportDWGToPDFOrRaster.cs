@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.ImageOptions;
+
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {
     public class ExportDWGToPDFOrRaster
@@ -14,53 +17,59 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
             string sourceFilePath = MyDir + "Bottom_plate.dwg";
-               
-            using (CadImage cadImage = (CadImage)Image.Load(fileName))
-        {
+            string outPath = MyDir + "Bottom_plate.pdf";
 
-            // export to pdf
-            CadRasterizationOptions rasterizationOptions = new CadRasterizationOptions();
-            rasterizationOptions.Layouts = new string[] { "Model" };
-
-            bool currentUnitIsMetric = false;
-            double currentUnitCoefficient = 1.0;
-             DefineUnitSystem(cadImage.UnitType, out currentUnitIsMetric, out currentUnitCoefficient);
-
-            if (currentUnitIsMetric)
-           {
-             double metersCoeff = 1 / 1000.0;
-
-              double scaleFactor = metersCoeff / currentUnitCoefficient;
-
-              rasterizationOptions.PageWidth = (float)(210 * scaleFactor);
-              rasterizationOptions.PageHeight = (float)(297 * scaleFactor);
-              rasterizationOptions.UnitType = UnitType.Millimeter;
-       }
-           else
-       {
-             rasterizationOptions.PageWidth = (float)(8.27f / currentUnitCoefficient);
-             rasterizationOptions.PageHeight = (float)(11.69f / currentUnitCoefficient);
-             rasterizationOptions.UnitType = UnitType.Inch;
-             }
-
-             rasterizationOptions.AutomaticLayoutsScaling = true;
-
-             PdfOptions pdfOptions = new PdfOptions
+            using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
             {
-              VectorRasterizationOptions = rasterizationOptions
-            };
 
-             cadImage.Save(outPath, pdfOptions);
+                // export to pdf
+                CadRasterizationOptions rasterizationOptions = new CadRasterizationOptions();
+                rasterizationOptions.Layouts = new string[] { "Model" };
 
-            // export to raster
-           //A4 size at 300 DPI - 2480 x 3508   
-            rasterizationOptions.PageHeight = 3508;
-             rasterizationOptions.PageWidth = 2480;
- 
-            cadImage.Save(outPath.Replace("pdf", "png"), pngOptions);
+                bool currentUnitIsMetric = false;
+                double currentUnitCoefficient = 1.0;
+                DefineUnitSystem(cadImage.UnitType, out currentUnitIsMetric, out currentUnitCoefficient);
 
+                if (currentUnitIsMetric)
+                {
+                    double metersCoeff = 1 / 1000.0;
 
-          private static void DefineUnitSystem(UnitType unitType, out bool isMetric, out double coefficient)
+                    double scaleFactor = metersCoeff / currentUnitCoefficient;
+
+                    rasterizationOptions.PageWidth = (float)(210 * scaleFactor);
+                    rasterizationOptions.PageHeight = (float)(297 * scaleFactor);
+                    rasterizationOptions.UnitType = UnitType.Millimeter;
+                }
+                else
+                {
+                    rasterizationOptions.PageWidth = (float)(8.27f / currentUnitCoefficient);
+                    rasterizationOptions.PageHeight = (float)(11.69f / currentUnitCoefficient);
+                    rasterizationOptions.UnitType = UnitType.Inch;
+                }
+
+                rasterizationOptions.AutomaticLayoutsScaling = true;
+
+                PdfOptions pdfOptions = new PdfOptions
+                {
+                    VectorRasterizationOptions = rasterizationOptions
+                };
+
+                cadImage.Save(outPath, pdfOptions);
+
+                // export to raster
+                //A4 size at 300 DPI - 2480 x 3508   
+                rasterizationOptions.PageHeight = 3508;
+                rasterizationOptions.PageWidth = 2480;
+
+                PngOptions pngOptions = new PngOptions
+                {
+                    VectorRasterizationOptions = rasterizationOptions
+                };
+                cadImage.Save(outPath.Replace("pdf", "png"), pngOptions);
+
+            }
+        }
+        private static void DefineUnitSystem(UnitType unitType, out bool isMetric, out double coefficient)
         {
             isMetric = false;
             coefficient = 1.0;
@@ -143,8 +152,8 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                     break;
             }
         }
-            //ExEnd:ExportDWGToPDFOrRaster    
-            Console.WriteLine("\nThe DWG file exported successfully to PDF.\nFile saved at " + MyDir);
+        //ExEnd:ExportDWGToPDFOrRaster    
+        
 
         }
-    }
+}

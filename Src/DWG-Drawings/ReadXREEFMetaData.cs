@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
+
 namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 {
     public class ReadXREEFMetaData
@@ -14,7 +17,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             // The path to the documents directory.
             string MyDir = RunExamples.GetDataDir_DWGDrawings();
             string sourceFilePath = MyDir + "Bottom_plate.dwg";
-            using (CadImage image = (CadImage)Image.Load(fileName))
+            using (CadImage image = (CadImage)Image.Load(sourceFilePath))
             {
                 foreach (CadBaseEntity entity in image.Entities)
                 {
