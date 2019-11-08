@@ -7,13 +7,13 @@ using Aspose.CAD;
 
 namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
 {
-    public class ExportDGNToRasterImage
+    public class SupportForDGNV7
     {
         public static void Run()
         {
             try
             {
-                //ExStart:ExportDGNToRasterImage
+                //ExStart:SupportForDGNV7
                 // The path to the documents directory.
                 string MyDir = RunExamples.GetDataDir_ExportingDGN();
                 string sourceFilePath = MyDir + "Nikon_D90_Camera.dgn";
@@ -21,10 +21,9 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
                 {
                     // Create an object of DgnRasterizationOptions class and define/set different properties
-                    Aspose.CAD.ImageOptions.DgnRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.DgnRasterizationOptions();
+                    Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                     rasterizationOptions.PageWidth = 600;
                     rasterizationOptions.PageHeight = 300;
-                    rasterizationOptions.CenterDrawing = true;
                     rasterizationOptions.NoScaling = true;
                     rasterizationOptions.AutomaticLayoutsScaling = false;
 
@@ -35,7 +34,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     // Call the save method of the CadImage class object.
                     cadImage.Save(MyDir + "ExportDGNToRasterImage_out.pdf", options);
                 }
-                //ExEnd:ExportDGNToRasterImage            
+                //ExEnd:SupportForDGNV7            
                 Console.WriteLine("\nThe DGN file exported successfully to raster image.\nFile saved at " + MyDir);
             }
             catch (Exception ex)

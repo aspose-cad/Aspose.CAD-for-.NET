@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.FileFormats.Dgn;
+using Aspose.CAD.FileFormats.Dgn.DgnElements;
 
 namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
 {
@@ -18,7 +20,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 string MyDir = RunExamples.GetDataDir_ExportingDGN();
                 string sourceFilePath = MyDir + "Nikon_D90_Camera.dgn";
                 // Load an existing DGN file as CadImage.
-                using (DgnImage dgnImage = (DgnImage)Image.Load(file))
+                using (DgnImage dgnImage = (DgnImage)Image.Load(sourceFilePath))
                 {
                     foreach (DgnDrawingElementBase element in dgnImage.Elements)
                     {
