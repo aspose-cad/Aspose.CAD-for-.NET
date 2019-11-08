@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
+using Aspose.CAD.ImageOptions;
+
 namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 {
     public class ExportDXFToWMF
@@ -27,7 +29,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                     VectorRasterizationOptions = vectorOptions
                 };
 
-                image.Save("NRB-GRID-BLOCK-MD-PROVALVDK-241000-162000-45400.dgn.wmf", vectorOptions);
+                image.Save("NRB-GRID-BLOCK-MD-PROVALVDK-241000-162000-45400.dgn.wmf", wmfOptions);
             }
             //ExEnd:ExportDXFToWMF            
             Console.WriteLine("\nThe DXF drawing exported successfully to PDF.\nFile saved at " + MyDir);
