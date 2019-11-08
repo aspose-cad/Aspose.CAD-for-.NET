@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Aspose.CAD;
 using Aspose.CAD.FileFormats.Cad.CadTables;
+using Aspose.CAD.FileFormats.Cad;
+using Aspose.CAD.FileFormats.Cad.CadObjects;
 
 namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
 {
