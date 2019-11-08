@@ -149,10 +149,159 @@ namespace Aspose.CAD.Examples.CSharp
             //// PLT-Drawings
             //// =====================================================
             //// =====================================================
+// Uncomment the one you want to try out
+
+            //// =====================================================
+            //// =====================================================
+            //// Features
+            //// =====================================================
+            //// =====================================================
+
+            //FreePointOfView.Run();
+            //CFFToPDF.Run();
+            //AddWatermark.Run();
+            //SinglePDFWithDifferentLayouts.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Hyperlinks
+            //// =====================================================
+            //// =====================================================
+
+            //EditHyperlink.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// DWF-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //GetSizeOfDwfLayout.Run();
+            //SupportOfLayers.Run();
+            //// =====================================================
+            //// =====================================================
+            //// DWG-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //AccessingUnderlayFlagsofDWG.Run();
+            //AddTextInDWG.Run();
+            //ColorRendering.Run();
+            //DWGToCompliancePDF.Run();
+            //DWGToDXF.Run();
+            //ExportDWGToPDFOrRaster.Run();
+            //ExportOLEObjects.Run();
+            //ExportSpecificLayoutToPDF.Run();
+            //ExportToPDF.Run();
+            //ExportToSVG.Run();
+            //GetBlockAttributeValue.Run();
+            //ImportImageToDWG.Run();
+            //LargeDWGToPDF.Run();
+            //MeshSupportForDWG.Run();
+            //ParticularDWGToImage.Run();
+            //ReadXREEFMetaData.Run();
+            //RenderDWGDocument.Run();
+            //SearchText.Run();
+            //SupportForHiddenLines.Run();
+            //SupportMLeaderEntityForDWGFormat.Run();
+
+
+            //// =====================================================
+            //// =====================================================
+            //// DXF-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //AddAttribute.Run();
+            //EnableTracking.Run();
+            //ExportDXFSpecificLayerToPDF.Run();
+            //ExportDXFSpecificLayoutToPDF.Run();
+            //ExportDXFToPDF.Run();
+            //ExportDXFToWMF.Run();
+            //ExportEmbeddedDGN.Run();
+            //ExportImagesToDXF.Run();
+            //ExportSpecificDXFLayoutToImage.Run();
+            //RenderDXFAsPDF.Run();
+            //SaveDXFFiles.Run();
+            //SupportOfBlockClipping.Run();
+
+
+
+            //// =====================================================
+            //// =====================================================
+            //// ConvertingCAD
+            //// =====================================================
+            //// =====================================================
+
+            //AdjustingCADDrawingSize.Run();
+            //CADLayersToRasterImageFormats.Run();
+            //ConvertDrawingToRasterImage.Run();
+            //ConvertLayoutsToRasterImage.Run();
+            //EnableTrackingForCADRendering.Run();
+            //GetSizeOfCADLayout.Run();
+            //IntegrateIGESFormat.Run();
+            //ListLayouts.Run();
+            //MeshSupport.Run();
+            //PenSupportInExport.Run();
+            //ReadingDWT.Run();
+            //SettingAutoLayoutScaling.Run();
+            //SettingBackgroundAndDrawingColors.Run();
+            //SettingCanvasSizeAndMode.Run();
+            //SubstitutingFonts.Run();
+
+
+            //// =====================================================
+            //// =====================================================
+            ////Export
+            //// =====================================================
+            //// =====================================================
+
+            //ACADProxyEntities.Run();
+            //CADLayoutsToPDF.Run();
+            //DecomposeCADInsertObject.Run();
+            //Export3DImagestoPDF.Run();
+            //ExportDWFToPDF.Run();
+            //ExportToBMP.Run();
+            //PLTSupport.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////DGN-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //ExportDGNAsPartofDWG.Run();
+            //ExportDGNToPdf.Run();
+            //ExportDGNToRasterImage.Run();
+            //SupportedDGNElements.Run();
+            //SupportOf3DForDGNV7.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// IFC-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //ExportingIFCtoPNG.ExportToPNG();
+
+            //// =====================================================
+            //// =====================================================
+            //// IGES-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //ExportIGEStoPDF.Run();
+
+
+            //// =====================================================
+            //// =====================================================
+            //// PLT-Drawings
+            //// =====================================================
+            //// =====================================================
 
             //ExportPLTtoImage.Run();
             //ExportPLTtoPDF.Run();
-           
+
             //// =====================================================
             //// =====================================================
             //// STL-Drawings
@@ -160,6 +309,8 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //ExportingSTLtoPNG.Run();
+
+
             //add here
 
 
