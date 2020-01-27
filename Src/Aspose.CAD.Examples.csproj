@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD, Version=19.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>packages\Aspose.CAD.19.9.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=20.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.CAD.20.1.0\lib\net40\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,6 +72,7 @@
     <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
     <Compile Include="DWG-Drawings\ColorRendering.cs" />
     <Compile Include="DWG-Drawings\DWGToCompliancePDF.cs" />
+    <Compile Include="DWG-Drawings\DWGToDWF.cs" />
     <Compile Include="DWG-Drawings\DWGToDXF.cs" />
     <Compile Include="DWG-Drawings\ExportDWGToPDFOrRaster.cs" />
     <Compile Include="DWG-Drawings\ExportOLEObjects.cs" />
@@ -119,15 +120,17 @@
     <Compile Include="Hyperlinks\EditHyperlink.cs" />
     <Compile Include="IFC-Drawings\ExportingIFCtoPNG.cs" />
     <Compile Include="IGES-Drawings\ExportIGEStoPDF.cs" />
+    <Compile Include="OBJ-Drawings\SupportOfOBJ.cs" />
     <Compile Include="PLT-Drawings\ExportPLTtoPDF.cs" />
     <Compile Include="PLT-Drawings\ExportPLTtoImage.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="STL-Drawings\ExportingSTLtoPNG.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
