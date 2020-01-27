@@ -23,6 +23,15 @@ namespace Aspose.CAD.Examples.CSharp.Hyperlinks
             {
                 foreach (CadBaseEntity entity in cadImage.Entities)
                 {
+                    if (entity is CadInsertObject)
+                    {
+                        CadBlockEntity block = cadImage.BlockEntities[((CadInsertObject)entity).Name];
+                        if (!string.IsNullOrEmpty(block.XRefPathName.Value))
+                        {
+                            block.XRefPathName.Value = "new file reference.dwg";
+                        }
+                    }
+
                     if (entity.Hyperlink == "https://products.aspose.com")
                     {
                         entity.Hyperlink = "https://www.aspose.com";
