@@ -14,6 +14,8 @@ using Aspose.CAD.Examples.CSharp.IFC_Drawings;
 using Aspose.CAD.Examples.CSharp.STL_Drawings;
 using Aspose.CAD.Examples.CSharp.Hyperlinks;
 using Aspose.CAD.Examples.CSharp.Features;
+using Aspose.CAD.Examples.CSharp.OBJ_Drawings;
+
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -68,6 +70,7 @@ namespace Aspose.CAD.Examples.CSharp
             //DWGToCompliancePDF.Run();
             //EditHyperlink.Run();
             //ExportOLEObjects.Run();
+            //DWGToDWF.Run();
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -169,6 +172,14 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //EditHyperlink.Run();
+            
+            //// =====================================================
+            //// =====================================================
+            //// OBJ-Drawings
+            //// =====================================================
+            //// =====================================================
+
+            //SupportOfOBJ.Run();
 
             //// =====================================================
             //// =====================================================
@@ -350,6 +361,11 @@ namespace Aspose.CAD.Examples.CSharp
         public static String GetDataDir_ConvertingCFF()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CFF/");
+        }
+        
+         public static String GetDataDir_OBJDrawings()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "OBJ-Drawings/");
         }
 
         private static string GetDataDir_Data()
