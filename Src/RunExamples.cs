@@ -15,7 +15,7 @@ using Aspose.CAD.Examples.CSharp.STL_Drawings;
 using Aspose.CAD.Examples.CSharp.Hyperlinks;
 using Aspose.CAD.Examples.CSharp.Features;
 using Aspose.CAD.Examples.CSharp.OBJ_Drawings;
-
+using Aspose.CAD.Examples.CSharp.DWFX_Drawings;
 
 namespace Aspose.CAD.Examples.CSharp
 {
@@ -52,7 +52,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// DWG-Drawings
             //// =====================================================
             //// =====================================================
-            
+
             //AccessingUnderlayFlagsofDWG.Run();
             //ExportToPDF.Run();
             //ExportSpecificLayoutToPDF.Run();
@@ -137,7 +137,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //ExportingIFCtoPNG.ExportToPNG();
- 
+
             //// =====================================================
             //// =====================================================
             //// IGES-Drawings
@@ -152,7 +152,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// PLT-Drawings
             //// =====================================================
             //// =====================================================
-// Uncomment the one you want to try out
+            // Uncomment the one you want to try out
 
             //// =====================================================
             //// =====================================================
@@ -164,6 +164,7 @@ namespace Aspose.CAD.Examples.CSharp
             //CFFToPDF.Run();
             //AddWatermark.Run();
             //SinglePDFWithDifferentLayouts.Run();
+            //PutTimeoutOnSave.Run();
 
             //// =====================================================
             //// =====================================================
@@ -172,7 +173,7 @@ namespace Aspose.CAD.Examples.CSharp
             //// =====================================================
 
             //EditHyperlink.Run();
-            
+
             //// =====================================================
             //// =====================================================
             //// OBJ-Drawings
@@ -189,6 +190,16 @@ namespace Aspose.CAD.Examples.CSharp
 
             //GetSizeOfDwfLayout.Run();
             //SupportOfLayers.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// DWFX-Drawings
+            //// =====================================================
+            //// =====================================================
+
+
+            OpenDwfxFile.Run();
+
             //// =====================================================
             //// =====================================================
             //// DWG-Drawings
@@ -215,7 +226,7 @@ namespace Aspose.CAD.Examples.CSharp
             //SearchText.Run();
             //SupportForHiddenLines.Run();
             //SupportMLeaderEntityForDWGFormat.Run();
-
+            //OverrideAutomaticCodePageDetectionDwg.Run();
 
             //// =====================================================
             //// =====================================================
@@ -357,7 +368,11 @@ namespace Aspose.CAD.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "DWF-Drawings/");
         }
-        
+        public static String GetDataDir_DWFXDrawings()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "DWFX-Drawings/");
+        }
+
         public static String GetDataDir_ConvertingCFF()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CFF/");
@@ -366,6 +381,11 @@ namespace Aspose.CAD.Examples.CSharp
          public static String GetDataDir_OBJDrawings()
         {
             return Path.GetFullPath(GetDataDir_Data() + "OBJ-Drawings/");
+        }
+
+        public static String GetDataDir_Output()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "01_OutputDirectory/");
         }
 
         private static string GetDataDir_Data()
