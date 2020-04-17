@@ -1,0 +1,51 @@
+﻿
+@model  LandingPageModel
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid header1 header2 minify-header appfamily-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>@Model.Resources["cadPageMainTitle"] </h1>
+				<h4>@Model.Resources["cadPageSubHeading"] </h4>
+			</div>
+			<div class="col-md-4 tc">
+				<img class=" col-xs-12" src="../img/aspose_cad-brand.png" alt="Aspose.Eps" width="320" />
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid productfamilypage bg-white pdb-5">
+	<div class="row">
+		<div class="container tc">
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<h3>@string.Format(@Model.Resources["AsposeProductFamilyInclude"], @Model.Resources["AsposeCAD"])  </h3>
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_viewer-app.png" alt="Aspose.CAD Product Family" />
+					</div>
+					<a href="/cad/viewer"><span class="spanclass">@Model.Resources["AsposeCAD"] @Model.Resources["AsposeProductFor"]  <em>@Model.Resources["Viewerh4"] </em></span><em>Don’t have AutoCAD installed? No problem. View your AutoCAD drawings from anywhere as an image representation.</em></a>
+				</div>
+
+			</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_conversion-app.png" alt="Aspose.CAD for .NET" />
+					</div>
+					<a href="/cad/conversion"><span class="spanclass">@Model.Resources["AsposeCAD"] @Model.Resources["AsposeProductFor"]  <em>Conversion</em></span><em>Convert AutoCAD files such as DWG, DXF, DWF, IFC, & STL to various fixed-layout or raster image formats.</em></a>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+<div class="spacer">&nbsp;</div>

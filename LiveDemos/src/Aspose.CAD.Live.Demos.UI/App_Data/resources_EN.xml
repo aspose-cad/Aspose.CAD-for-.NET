@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <res name="ApplicationTitle">Aspose.PSD Live Demos</res>
+  <res name="ApplicationTitle2">Free App Solutions for PSD files nanipulation </res>
+
+	<res name="Viewerh4">Viewer</res>
+	<res name="btnViewNow">VIEW NOW</res>
+	<res name="ViewerAction">View</res>
+  <res name="HomePageTitle">Home</res>
+  <res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+  <res name="FileConvertedSuccessMessage">Your file has been converted successfully, please download converted file</res>
+  <res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+  <res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+  <res name="btnConvertNow">CONVERT NOW</res>
+	<res name="AsposeCAD">Aspose.CAD</res>
+	<res name="EditorReturnQuestion">Are you sure you want to return?</res>
+	<res name="AsposeCad">Aspose.CAD</res>
+  <res name="PageNotFound">404 Page not found</res>
+  <res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+  <res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select a file to convert</res>
+  <res name="SaveAs">Save as</res>
+	<res name="ViewerAPPName">Viewer</res>
+	<res name="cadConversionSaveAsOptions">PDF, JPG, PNG, PDFA_1A, PDFA_1B, PDF_15, SVG, BMP, TIFF, GIF</res>
+  <res name="DropOrUploadFile">Drop or upload your file</res>
+  <res name="DropOrUploadFiles">Drop or upload your files</res>
+	<res name="cadValidationExpression">.dwg|.dxf|.dwf|.ifc|.stl</res>
+  <res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
+  <res name="DownLoadNow">DOWNLOAD NOW</res>
+  <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+	<res name="cadConversionPageTitle">Convert AutoCAD Files | Converter App for DWG, DXF, DWF, IFC, STL</res>
+	<res name="cadConversionMetaDescription">100% free app to convert AutoCAD DWG, DXF, DWF, IFC, STL files to PDF, JPG, PNG, SVG, BMP &amp; TIFF file formats.</res>
+	<res name="cadConversionTitle">Convert AutoCAD to PDF &amp; Images</res>
+	<res name="cadConversionSubTitle">Conversion app for popular AutoCAD file formats. Convert AutoCAD to PDF, PDF/A, raster images &amp; SVG.</res>
+	<!-- Conversion App - How To-->
+	<res name="HowtoConversionTitle">How to convert {0} file using {1}</res>
+	<res name="HowtoConversionFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoConversionFeature2">Your file will be uploaded and will be converted to required format.</res>
+	<res name="HowtoConversionFeature3">Download link of converted file will be available instantly after conversion.</res>
+	<res name="WrongRegExpMessage">Wrong regular expression</res>
+  <res name="ConvertAnotherFile">Convert another file</res>
+  
+	<res name="AsposeProductFor"></res>
+
+ 
+  <res name="Feature1">Fast and Easy Conversion</res>
+  <res name="Feature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature1TasksDescription">Upload your project (or select online), choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature2">Convert from Anywhere</res>
+  <res name="Feature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+  <res name="Feature3">Conversion Quality</res>
+  <res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	<res name="cadPageMainTitle">Free Online AutoCAD Apps</res>
+	<res name="cadPageSubHeading">Convert or View your AutoCAD files online from anywhere</res>
+  <res name="PoweredBy">Powered by</res>
+  <res name="Conversionh4">Conversion</res>
+  
+  <res name="SaveAsDescription">Save as: {0}</res>
+  <res name="ConversionCategory">conversion</res>
+  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
+
+	<res name="ConversionFeature1">Fast and Easy Conversion</res>
+	<res name="ConversionFeature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	<res name="ConversionFeature1TasksDescription">Upload your project (or select online), choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	<res name="ConversionFeature2">Convert from Anywhere</res>
+	<res name="ConversionFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ConversionFeature3">Conversion Quality</res>
+	<res name="ConversionButton">CONVERT</res>
+	<res name="ConversionAnotherFile">Convert other documents</res>
+	<res name="ConversionSuccessMessage">Your files have been processed successfully</res>	
+	<res name="ConversionAction">Convert</res>
+
+
+	<res name="cadViewerPageTitle">AutoCAD File Viewer | View DWG, DXF, DWF, IFC, STL Files Online</res>
+	<res name="cadViewerMetaDescription">Free online viewer for AutoCAD file formats. View DWG, DXF, DWF, IFC or STL files as images. Save resultant images on your device.</res>
+	<res name="cadViewerTitle">Free AutoCAD File Viewer App</res>
+	<res name="cadViewerSubTitle">Upload your AutoCAD files to view &amp; save as images on any device.</res>
+	<res name="cadViewerValidationExpression">.dwg|.dxf|.dwf|.ifc|.stl</res>
+	<res name="cadViewerLiFeature1">View your Free Online AutoCAD as an image representation</res>
+	
+	<res name="HowtoViewerTitle">How to View {0} file using {1}</res>
+	<res name="HowtoViewerFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoViewerFeature2">Your document file will be automatically rendered for you to view instantly.</res>
+	<res name="HowtoViewerFeature3">Download the document file in original, image or PDF format.</res>
+
+	<res name="ViewerFeature1">Quick and Easy Viewer</res>
+	<res name="ViewerFeature1Description">Upload your document and you will be redirected to the Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature1DescriptionChoice">Upload your document and you will be redirected to the {0} Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature2">View from Anywhere</res>
+	<res name="ViewerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ViewerFeature3">Viewer Quality</res>
+	<res name="ViewerLiFeature1">View your Photoshop online</res>
+	<res name="ViewerFeature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+</resources>
+
+
+
