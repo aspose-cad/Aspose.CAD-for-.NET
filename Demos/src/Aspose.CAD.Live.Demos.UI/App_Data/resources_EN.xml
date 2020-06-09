@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <res name="ApplicationTitle">Aspose.PSD Live Demos</res>
-  <res name="ApplicationTitle2">Free App Solutions for PSD files nanipulation </res>
+  <res name="ApplicationTitle">Aspose.CAD Live Demos</res>
+  <res name="ApplicationTitle2">Free App Solutions for CAD files nanipulation </res>
 
 	<res name="Viewerh4">Viewer</res>
 	<res name="btnViewNow">VIEW NOW</res>
