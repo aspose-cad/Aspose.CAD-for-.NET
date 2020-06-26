@@ -33,19 +33,19 @@ Directory | Description
 
 ## Read CAD Formats
 
-**AutoCAD:** DWG, DWT, DWF, DWXF, IFC, PLT
-**MicroStation:** DGN
-**The Advanced Visualizer:** OBJ
+**AutoCAD:** DWG, DWT, DWF, DWXF, IFC, PLT\
+**MicroStation:** DGN\
+**The Advanced Visualizer:** OBJ\
 **Other:** STL, IGES, CFF2
 
 ## Save CAD As
 
-**Fixed Layout:** PDF
+**Fixed Layout:** PDF\
 **Raster Images:** PNG, BMP, TIFF, JPEG, GIF
 
 ## Read & Write
 
-**CAD:** DXF
+**CAD:** DXF\
 (Write features is partially supported.)
 
 ## Platform Independence
