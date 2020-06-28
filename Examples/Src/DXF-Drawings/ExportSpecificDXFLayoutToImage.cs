@@ -1,10 +1,5 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Aspose.CAD;
-using Aspose.CAD;
 
 namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 {
@@ -47,12 +42,6 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                 }
             }
             //ExEnd:ExportSpecificDXFLayoutToImage
-
-
-
-
         }
-
-
     }
 }
