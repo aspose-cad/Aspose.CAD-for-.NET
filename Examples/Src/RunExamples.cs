@@ -71,6 +71,8 @@ namespace Aspose.CAD.Examples.CSharp
             //EditHyperlink.Run();
             //ExportOLEObjects.Run();
             //DWGToDWF.Run();
+            //ConvertDWGToPDFBySupplyingCoordinates.Run();
+
             //// =====================================================
             //// =====================================================
             //// DXF-Drawings
@@ -85,6 +87,7 @@ namespace Aspose.CAD.Examples.CSharp
             //SupportOfBlockClipping.Run();
             //ExportImagesToDXF.Run();
             //EnableTracking.Run();
+            //AddCustomProperties.Run();
 
             //// =====================================================
             //// =====================================================

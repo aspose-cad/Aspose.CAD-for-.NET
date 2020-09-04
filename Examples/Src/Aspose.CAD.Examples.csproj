@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.CAD, Version=20.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>packages\Aspose.CAD.20.6.0\lib\net40\Aspose.CAD.dll</HintPath>
+    <Reference Include="Aspose.CAD, Version=20.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.CAD.20.7.0\lib\net40\Aspose.CAD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +70,7 @@
     <Compile Include="DWF-Drawings\SupportOfLayers.cs" />
     <Compile Include="DWFX-Drawings\OpenDwfxFile.cs" />
     <Compile Include="DWG-Drawings\AccessingUnderlayFlagsofDWG.cs" />
+    <Compile Include="DWG-Drawings\ConvertDWGToPDFBySupplyingCoordinates.cs" />
     <Compile Include="DWG-Drawings\OverrideAutomaticCodePageDetectionDwg.cs" />
     <Compile Include="DWG-Drawings\AddTextInDWG.cs" />
     <Compile Include="DWG-Drawings\ColorRendering.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="DWG-Drawings\ReadXREEFMetaData.cs" />
     <Compile Include="DWG-Drawings\RenderDWGDocument.cs" />
     <Compile Include="DWG-Drawings\SupportForHiddenLines.cs" />
+    <Compile Include="DXF-Drawings\AddCustomProperties.cs" />
     <Compile Include="DXF-Drawings\EnableTracking.cs" />
     <Compile Include="DWG-Drawings\ImportImageToDWG.cs" />
     <Compile Include="DWG-Drawings\ParticularDWGToImage.cs" />
