@@ -17,6 +17,7 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 
             string inputFile = MyDir + "SLS-CW-CD-CE001-R01_blockClip.dxf";
             string outputFile = MyDir + "SLS-CW-CD-CE001-R01_blockClip.pdf";
+
             using (CadImage cadImage = (CadImage)Image.Load(inputFile))
             {
                 var rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions
@@ -25,8 +26,13 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
                     DrawType = Aspose.CAD.FileFormats.Cad.CadDrawTypeMode.UseObjectColor,
                     PageWidth = 1200,
                     PageHeight = 1600,
-                    BorderX = 30,
-                    BorderY = 5,
+                    Margins = new Margins
+                    {
+                        Top = 5,
+                        Right = 30,
+                        Bottom = 5,
+                        Left = 30
+                    },
                     
                     Layouts = new string[] { "Model" }
                 };
