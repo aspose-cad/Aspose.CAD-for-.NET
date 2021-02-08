@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.CAD) ![Nuget](https://img.shields.io/nuget/dt/Aspose.CAD) ![GitHub](https://img.shields.io/github/license/aspose-cad/Aspose.CAD-for-.NET)
+
 # CAD File Conversion API for .NET
 
 [Aspose.CAD for .NET](https://products.aspose.com/cad/net) is a standalone class library to enhance ASP.NET & Windows applications to process & render CAD drawings without requiring AutoCAD or any other rendering workflow. The CAD Class Library allows high quality [conversion of DWG, DWF, DWT and DXF](https://docs.aspose.com/cad/net/supported-file-formats/) files, layouts and layers to PDF & raster image formats.
