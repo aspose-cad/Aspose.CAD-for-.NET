@@ -1,4 +1,4 @@
-﻿namespace MauiApp1;
+﻿namespace CadMauiApp;
 
 public partial class AppShell : Shell
 {

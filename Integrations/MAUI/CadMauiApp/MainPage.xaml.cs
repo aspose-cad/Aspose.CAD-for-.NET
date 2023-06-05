@@ -1,13 +1,14 @@
 ﻿using Aspose.CAD.ImageOptions;
 
-namespace MauiApp1;
+namespace CadMauiApp;
 
 public partial class MainPage : ContentPage
 {
+
 	public MainPage()
 	{
 		InitializeComponent();
-    }
+	}
 
     private void OnCleanClicked(object sender, EventArgs e)
     {
