@@ -32,17 +32,16 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 double height = 2489;
 
                 CadVportTableObject newView = new CadVportTableObject();
-                newView.Name = new CadStringParameter();
-                newView.Name.Init("*Active");
+                newView.Name = "*Active";
                 newView.CenterPoint.X = topLeft.X + width / 2f;
                 newView.CenterPoint.Y = topLeft.Y - height / 2f;
-                newView.ViewHeight.Value = height;
-                newView.ViewAspectRatio.Value = width / height;
+                newView.ViewHeight = height;
+                newView.ViewAspectRatio = width / height;
 
                 for (int i = 0; i < cadImage.ViewPorts.Count; i++)
                 {
                     CadVportTableObject currentView = (CadVportTableObject)(cadImage.ViewPorts[i]);
-                    if (cadImage.ViewPorts.Count == 1 || string.Equals(currentView.Name.Value.ToLowerInvariant(), "*active"))
+                    if (cadImage.ViewPorts.Count == 1 || string.Equals(currentView.Name.ToLowerInvariant(), "*active"))
                     {
                         cadImage.ViewPorts[i] = newView;
                         break;

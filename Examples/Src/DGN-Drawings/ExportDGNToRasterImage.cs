@@ -28,8 +28,9 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                     rasterizationOptions.NoScaling = true;
                     rasterizationOptions.AutomaticLayoutsScaling = false;
 
-                    // Create an object of JpegOptions class as we are converting the DGN to jpeg and assign DgnRasterizationOptions object to it.
-                    Aspose.CAD.ImageOptionsBase options = new Aspose.CAD.ImageOptions.JpegOptions();
+                    // Create an object of JpegOptions class as we are converting
+                    // the DGN to jpeg and assign DgnRasterizationOptions object to it.
+                    var options = new Aspose.CAD.ImageOptions.JpegOptions();
                     options.VectorRasterizationOptions = rasterizationOptions;
 
                     // Call the save method of the CadImage class object.

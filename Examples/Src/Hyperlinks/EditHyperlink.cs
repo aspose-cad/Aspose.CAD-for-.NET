@@ -21,14 +21,14 @@ namespace Aspose.CAD.Examples.CSharp.Hyperlinks
 
             using (CadImage cadImage = (CadImage)Image.Load(dwgPathToFile))
             {
-                foreach (CadBaseEntity entity in cadImage.Entities)
+                foreach (CadEntityBase entity in cadImage.Entities)
                 {
                     if (entity is CadInsertObject)
                     {
                         CadBlockEntity block = cadImage.BlockEntities[((CadInsertObject)entity).Name];
-                        if (!string.IsNullOrEmpty(block.XRefPathName.Value))
+                        if (!string.IsNullOrEmpty(block.XRefPathName))
                         {
-                            block.XRefPathName.Value = "new file reference.dwg";
+                            block.XRefPathName = "new file reference.dwg";
                         }
                     }
 

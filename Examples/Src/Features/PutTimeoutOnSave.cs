@@ -20,19 +20,21 @@ namespace Aspose.CAD.Examples.CSharp.Features
                 rasterizationOptions.PageWidth = cadDrawing.Size.Width;
                 rasterizationOptions.PageHeight = cadDrawing.Size.Height;
 
-                using (var its = new InterruptionTokenSource())
+                using (var its = new CancellationTokenSource())
                 {
-                    PdfOptions CADf = new PdfOptions();
-                    CADf.VectorRasterizationOptions = rasterizationOptions;
-                    CADf.InterruptionToken = its.Token;
+                    var pdfOptions = new PdfOptions
+                    {
+                        VectorRasterizationOptions = rasterizationOptions,
+                        CancellationToken = its.Token
+                    };
 
                     var exportTask = Task.Factory.StartNew(() =>
                     {
-                        cadDrawing.Save(OutputDir + "PutTimeoutOnSave_out.pdf", CADf);
+                        cadDrawing.Save(OutputDir + "PutTimeoutOnSave_out.pdf", pdfOptions);
                     });
 
                     Thread.Sleep(10000);
-                    its.Interrupt();
+                    its.Cancel();
 
                     exportTask.Wait();
                 }

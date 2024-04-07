@@ -33,18 +33,19 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 CadVportTableObject newView = new CadVportTableObject();
 
                 // note: exactly such table name is required for active view
-                newView.Name.Value = "*Active";
+                newView.Name = "*Active";
                 newView.CenterPoint.X = topLeft.X + width / 2f;
                 newView.CenterPoint.Y = topLeft.Y - height / 2f;
-                newView.ViewHeight.Value = height;
-                newView.ViewAspectRatio.Value = width / height;
+                newView.ViewHeight = height;
+                newView.ViewAspectRatio = width / height;
 
                 // search for active viewport and replace it
                 for (int i = 0; i < cadImage.ViewPorts.Count; i++)
                 {
-                    CadVportTableObject currentView = (CadVportTableObject)(cadImage.ViewPorts[i]);
-                    if ((currentView.Name.Value == null && cadImage.ViewPorts.Count == 1) ||
-                    string.Equals(currentView.Name.Value.ToLowerInvariant(), "*active"))
+                    var currentView = (CadVportTableObject)(cadImage.ViewPorts[i]);
+                    
+                    if ((currentView.Name == null && cadImage.ViewPorts.Count == 1) 
+                        || string.Equals(currentView.Name.ToLowerInvariant(), "*active"))
                     {
                         cadImage.ViewPorts[i] = newView;
                         break;

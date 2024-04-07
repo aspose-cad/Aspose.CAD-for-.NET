@@ -17,8 +17,8 @@ namespace Aspose.CAD.Examples.CSharp.DXF_Drawings
 			// The path to the documents directory.
 			string MyDir = RunExamples.GetDataDir_DXFDrawings();
 			string sourceFilePath = MyDir + "conic_pyramid.dxf";
-			List<CadBaseEntity> mtextList = new List<CadBaseEntity>();
-			List<CadBaseEntity> attribList = new List<CadBaseEntity>();
+			List<CadEntityBase> mtextList = new List<CadEntityBase>();
+			List<CadEntityBase> attribList = new List<CadEntityBase>();
 
 			using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
 			{

@@ -19,7 +19,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             string sourceFilePath = MyDir + "Bottom_plate.dwg";
             using (CadImage image = (CadImage)Image.Load(sourceFilePath))
             {
-                foreach (CadBaseEntity entity in image.Entities)
+                foreach (CadEntityBase entity in image.Entities)
                 {
                     if (entity is CadUnderlay)
                     {

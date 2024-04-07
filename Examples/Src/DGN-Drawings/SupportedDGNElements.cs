@@ -22,7 +22,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 // Load an existing DGN file as CadImage.
                 using (DgnImage dgnImage = (DgnImage)Image.Load(sourceFilePath))
                 {
-                    foreach (DgnDrawingElementBase element in dgnImage.Elements)
+                    foreach (var element in dgnImage.Entities)
                     {
                         switch (element.Metadata.Type)
                         {

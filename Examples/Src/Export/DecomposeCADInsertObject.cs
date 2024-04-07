@@ -20,13 +20,12 @@ namespace Aspose.CAD.Examples.CSharp.Export
 			using (CadImage cadImage = (CadImage)Image.Load(sourceFilePath))
 			{
 
-				for (int i = 0; i < cadImage.Entities.Length; i++)
+				foreach (var entity in cadImage.Entities)
 				{
-					if (cadImage.Entities[i].TypeName == CadEntityTypeName.INSERT)
+					if (entity.TypeName == CadEntityTypeName.INSERT)
 					{
-						CadBlockEntity block = cadImage.BlockEntities[(cadImage.Entities[i] as CadInsertObject).Name];
-
-						foreach (CadBaseEntity baseEntity in block.Entities)
+						CadBlockEntity block = cadImage.BlockEntities[(entity as CadInsertObject).Name];
+						foreach (CadEntityBase baseEntity in block.Entities)
 						{
 							//  processing of entities
 						}

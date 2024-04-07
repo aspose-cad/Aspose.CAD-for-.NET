@@ -40,8 +40,8 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 // Test
                 FileFormats.Cad.CadImage cadImage = (FileFormats.Cad.CadImage)image;
 
-                Assert.AreNotEqual(cadImage.Entities.Length, 0);
-                CadMLeader cadMLeader = (CadMLeader)cadImage.Entities[2];
+                Assert.AreNotEqual(cadImage.Entities.Count(), 0);
+                CadMLeader cadMLeader = (CadMLeader)cadImage.Entities.ElementAt(2);
 
                 Assert.AreEqual(cadMLeader.StyleDescription, "Standard");
                 Assert.AreEqual(cadMLeader.LeaderStyleId, "12E");
@@ -53,7 +53,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 Assert.AreEqual(context.ArrowHeadSize, 30.0, 0.1);
                 Assert.AreEqual(context.BasePoint.X, 481, 1);
                 Assert.AreEqual(context.ContentScale, 1.0, 0.01);
-                Assert.AreEqual(context.DefaultText.Value, "This is multileader with huge text\\P{\\H1.5x;6666666666666666666666666666\\P}bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+                Assert.AreEqual(context.DefaultText, "This is multileader with huge text\\P{\\H1.5x;6666666666666666666666666666\\P}bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
                 Assert.AreEqual(context.HasMText, true);
 
                 CadMLeaderNode mleaderNode = context.LeaderNode;
@@ -62,20 +62,20 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 CadMLeaderLine leaderLine = mleaderNode.LeaderLine;
 
                 Assert.AreEqual(leaderLine.BreakEndPoint, null);
-                Assert.AreEqual(leaderLine.BreakPointIndex.Value, 0);
+                Assert.AreEqual(leaderLine.BreakPointIndex, 0);
                 Assert.AreEqual(leaderLine.BreakStartPoint, null);
-                Assert.AreEqual(leaderLine.LeaderLineIndex.Value, 0);
+                Assert.AreEqual(leaderLine.LeaderLineIndex, 0);
                 Assert.AreEqual(leaderLine.LeaderPoints.Count, 4);
 
                 Assert.AreEqual(mleaderNode.BranchIndex, 0);
                 Assert.AreEqual(mleaderNode.DogLegLength, 8.0, 0.1);
 
                 Assert.AreEqual(context.HasMText, true);
-                Assert.AreEqual(context.TextAttachmentType.Value, 1);
-                Assert.AreEqual(context.TextBackgroundColor.Value, 18);
+                Assert.AreEqual(context.TextAttachmentType, 1);
+                Assert.AreEqual(context.TextBackgroundColor, 18);
                 Assert.AreEqual(context.TextHeight, 20.0, 0.1);
-                Assert.AreEqual(context.TextStyleID.Value, "11");
-                Assert.AreEqual(context.TextRotation.Value, 0.0, 0.01);
+                Assert.AreEqual(context.TextStyleID, "11");
+                Assert.AreEqual(context.TextRotation, 0.0, 0.01);
 
                 Assert.AreEqual(cadMLeader.ArrowHeadId1, "639");
                 Assert.AreEqual(cadMLeader.LeaderType, 1);

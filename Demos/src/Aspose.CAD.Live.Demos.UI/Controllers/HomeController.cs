@@ -9,11 +9,7 @@ namespace Aspose.CAD.Live.Demos.UI.Controllers
 {
 	public class HomeController : BaseController
 	{
-	
 		public override string Product => (string)RouteData.Values["productname"];
-		
-
-		
 
 		public ActionResult Default()
 		{

@@ -19,7 +19,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
             string MyDir = RunExamples.GetDataDir_ConvertingCAD();
             using (CadImage image = (CadImage)Image.Load(MyDir+"example.dwt"))
           {
-           foreach (CadBaseEntity entity in image.Entities)
+           foreach (CadEntityBase entity in image.Entities)
          {
          //do your work here
           }

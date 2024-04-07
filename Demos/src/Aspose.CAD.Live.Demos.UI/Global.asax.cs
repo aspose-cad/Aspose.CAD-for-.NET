@@ -21,7 +21,6 @@ namespace Aspose.CAD.Live.Demos.UI
 
 		void Application_Start(object sender, EventArgs e)
 		{
-
 			AreaRegistration.RegisterAllAreas();
 			GlobalConfiguration.Configure(WebApiConfig.Register);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);			
@@ -40,15 +39,23 @@ namespace Aspose.CAD.Live.Demos.UI
 		private void SetResourceFile(string strLanguage)
 		{
 			if (Session["AsposeCADResources"] == null)
-				Session["AsposeCADResources"] = new GlobalAppHelper(HttpContext.Current, Application, Configuration.ResourceFileSessionName, strLanguage);
+			{
+				Session["AsposeCADResources"] = new GlobalAppHelper(
+					HttpContext.Current, Application, Configuration.ResourceFileSessionName, strLanguage);
+			}
 		}
 
 		void RegisterCustomRoutes(RouteCollection routes)
 		{
 			routes.RouteExistingFiles = true;
 			routes.Ignore("{resource}.axd/{*pathInfo}");
-					
-
+			
+			routes.MapRoute(
+				name: "Root",
+				url: "",
+				defaults: new { controller = "Home", action = "Default" }
+			);
+			
 			routes.MapRoute(
 				name: "Default",
 				url: "Default",
@@ -60,33 +67,30 @@ namespace Aspose.CAD.Live.Demos.UI
 				"{product}/Conversion",
 				 new { controller = "Conversion", action = "Conversion" }
 			);
+			
 			routes.MapRoute(
 				"DownloadFileRoute",
 				"common/download",
 				new { controller = "Common", action = "DownloadFile" }
-				
-				
 			);
+			
 			routes.MapRoute(
 				"UploadFileRoute",
 				"common/uploadfile",
 				new { controller = "Common", action = "UploadFile" }
-
 			);
+			
 			routes.MapPageRoute(
 			  "AsposeCADDefaultViewerRoute",
 			  "cad/view",
 			  "~/ViewerApp/Default.aspx"
 			);
+			
 			routes.MapRoute(
 				"AsposeCADViewerRoute",
 				"{product}/viewer",
 				 new { controller = "Viewer", action = "Viewer" }
 			);
-
-
 		}
-
-		
 	}
 }

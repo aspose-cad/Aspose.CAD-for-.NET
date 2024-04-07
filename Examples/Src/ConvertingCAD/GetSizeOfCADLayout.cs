@@ -114,13 +114,15 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
             {
                 foreach (CadBlockTableObject tableObject in cadImage.BlocksTables)
                 {
-                    if (string.Equals(tableObject.HardPointerToLayout.Value, layout.ObjectHandle, StringComparison.InvariantCultureIgnoreCase))
+                    if (string.Equals(tableObject.HardPointerToLayout, layout.ObjectHandle, StringComparison.InvariantCultureIgnoreCase))
                     {
                         if (cadImage.BlockEntities.ContainsKey(tableObject.BlockName))
                         {
                             CadBlockEntity cadBlockEntity = cadImage.BlockEntities[tableObject.BlockName];
-                            if (cadBlockEntity.Entities.Length > 0)
+                            if (cadBlockEntity.Entities.Any())
+                            {
                                 notEmptyLayouts.Add(layout.LayoutName);
+                            }
                         }
                         break;
                     }
@@ -141,11 +143,11 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                     layoutBlockHandles.Add(layout.BlockTableRecordHandle, layout.LayoutName);
             }
 
-            foreach (CadBaseEntity entity in cadImage.Entities)
+            foreach (CadEntityBase entity in cadImage.Entities)
             {
-                if (layoutBlockHandles.ContainsKey(entity.SoftOwner.Value))
+                if (layoutBlockHandles.ContainsKey(entity.SoftOwner))
                 {
-                    string layoutName = layoutBlockHandles[entity.SoftOwner.Value];
+                    string layoutName = layoutBlockHandles[entity.SoftOwner];
                     if (!notEmptyLayouts.Contains(layoutName))
                         notEmptyLayouts.Add(layoutName);
                 }

@@ -18,7 +18,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
             {
                 Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)image;
 
-                Aspose.CAD.FileFormats.Cad.CadLayoutDictionary layouts = cadImage.Layouts;
+                var layouts = cadImage.Layouts;
                 foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadLayout layout in layouts.Values)
                 {
                     Console.WriteLine("Layout " + layout.LayoutName);

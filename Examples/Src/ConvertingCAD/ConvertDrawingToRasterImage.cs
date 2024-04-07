@@ -23,7 +23,7 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.PageHeight = 1200;
 
                 // Create an instance of PngOptions for the resultant image
-                ImageOptionsBase options = new Aspose.CAD.ImageOptions.PngOptions();
+                var options = new Aspose.CAD.ImageOptions.PngOptions();
                 // Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions;
 

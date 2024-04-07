@@ -23,14 +23,14 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Aspose.CAD.Image.Load(sourceFilePath))
             {
                 // Search for text in the file 
-                foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadBaseEntity entity in cadImage.Entities)
+                foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadEntityBase entity in cadImage.Entities)
                 {
                     // Please, note: we iterate through CadText entities here, but some other entities may contain text also, e.g. CadMText and others
                     IterateCADNodes(entity);
                 }
 
                 // Search for text on specific layout get all layout names and link each layout with corresponding block with entities
-                Aspose.CAD.FileFormats.Cad.CadLayoutDictionary layouts = cadImage.Layouts;
+                var layouts = cadImage.Layouts;
                 string[] layoutNames = new string[layouts.Count];
                 int i = 0;
                 foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadLayout layout in layouts.Values)
@@ -57,7 +57,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
                 }
 
                 //Export to pdf
-                Aspose.CAD.ImageOptions.CadRasterizationOptions rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
+                var rasterizationOptions = new Aspose.CAD.ImageOptions.CadRasterizationOptions();
                 rasterizationOptions.PageWidth = 1600;
                 rasterizationOptions.PageHeight = 1600;
                 rasterizationOptions.AutomaticLayoutsScaling = true;
@@ -98,7 +98,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
 
 
-       private static void IterateCADNodes(CadBaseEntity obj) 
+       private static void IterateCADNodes(CadEntityBase obj) 
        { 
            switch (obj.TypeName) { 
                case CadEntityTypeName.TEXT: 

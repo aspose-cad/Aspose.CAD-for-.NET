@@ -27,7 +27,8 @@ namespace Aspose.CAD.Examples.CSharp.ConvertingCAD
                 rasterizationOptions.Layouts = new string[] { "Model", "Layout1" };
 
                 // Create an instance of TiffOptions for the resultant image
-                ImageOptionsBase options = new Aspose.CAD.ImageOptions.TiffOptions(Aspose.CAD.FileFormats.Tiff.Enums.TiffExpectedFormat.Default);
+                var options = new Aspose.CAD.ImageOptions.TiffOptions(
+                    Aspose.CAD.FileFormats.Tiff.Enums.TiffExpectedFormat.Default);
 
                 // Set rasterization options
                 options.VectorRasterizationOptions = rasterizationOptions;

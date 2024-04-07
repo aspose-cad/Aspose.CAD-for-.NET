@@ -17,9 +17,11 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
 
             using (Image image = Image.Load(MyDir + "sample.dwg"))
             {
-                var options = new SvgOptions();
-                options.ColorType = Aspose.CAD.ImageOptions.SvgOptionsParameters.SvgColorMode.Grayscale;
-                options.TextAsShapes = true;
+                var options = new SvgOptions
+                {
+                    TextAsShapes = true
+                };
+                
                 image.Save(MyDir + "sample.svg");
             }
             //ExEnd:ExportToSVG

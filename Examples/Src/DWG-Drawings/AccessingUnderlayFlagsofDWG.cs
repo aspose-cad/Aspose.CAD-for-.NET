@@ -24,7 +24,7 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             using (Aspose.CAD.FileFormats.Cad.CadImage image = (Aspose.CAD.FileFormats.Cad.CadImage)Image.Load(fileName))
             {
                 // Go through each entity inside the DWG file
-                foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadBaseEntity entity in image.Entities)
+                foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadEntityBase entity in image.Entities)
                 {
                     // Check if entity is of CadDgnUnderlay type
                     if (entity is Aspose.CAD.FileFormats.Cad.CadObjects.CadDgnUnderlay)

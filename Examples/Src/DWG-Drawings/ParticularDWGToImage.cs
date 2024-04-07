@@ -17,10 +17,10 @@ namespace Aspose.CAD.Examples.CSharp.DWG_Drawings
             string sourceFilePath = MyDir + "visualization_-_conference_room.dwg";
             var cadImage = (CadImage)Aspose.CAD.Image.Load(sourceFilePath);
 
-            CadBaseEntity[] entities = cadImage.Entities;
-            List<CadBaseEntity> filteredEntities = new List<CadBaseEntity>();
+            var entities = cadImage.Entities;
+            var filteredEntities = new List<CadEntityBase>();
 
-            foreach (CadBaseEntity baseEntity in entities)
+            foreach (CadEntityBase baseEntity in entities)
             {
                 // selection or filtration of entities
                 if (baseEntity.TypeName == CadEntityTypeName.TEXT)

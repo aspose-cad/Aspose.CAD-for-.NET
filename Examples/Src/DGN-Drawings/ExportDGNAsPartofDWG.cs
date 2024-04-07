@@ -28,7 +28,7 @@ namespace Aspose.CAD.Examples.CSharp.Exporting_DGN
                 using (Aspose.CAD.FileFormats.Cad.CadImage cadImage = (Aspose.CAD.FileFormats.Cad.CadImage)Image.Load(fileName))
                 {
                     // Go through each entity inside the DWG file
-                    foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadBaseEntity baseEntity in cadImage.Entities)
+                    foreach (Aspose.CAD.FileFormats.Cad.CadObjects.CadEntityBase baseEntity in cadImage.Entities)
                     {
                         // Check if entity is an image definition
                         if (baseEntity.TypeName == Aspose.CAD.FileFormats.Cad.CadConsts.CadEntityTypeName.DGNUNDERLAY)
